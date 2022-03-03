@@ -1,0 +1,126 @@
+
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+     font-size: 62.5%;
+     height:100%;
+}
+
+body{
+     background: #130413;
+     color: #f6f6e9
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+     /* border: solid red; */
+     height: 10%;
+     display: flex;
+     margin: .5rem;
+     justify-content:space-between;
+     align-items: center;
+}
+
+#home{
+     border: solid orange;
+     height: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+#about{
+     border: solid yellow;
+     height: 100%;
+}
+
+#projects{
+     border: solid green;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     
+}
+
+#contact{
+     border: solid blue;
+     height: 100%;     
+}
+
+footer{
+     border: solid violet;
+     height: 10%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Nav */
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.nav-bar{
+     display: flex;
+     margin: 0 auto;
+     padding: 0;
+     list-style: none;
+}
+
+.nav-bar a{
+     margin: 0 .5rem;
+     color: #f6f6e9;
+     text-decoration: none;
+     font-size: 1rem;
+}
+
+/* Home */
+
+.home img{
+     border-radius: 50%;
+     width: 10rem;
+}
+
+
+
+.project{
+     /* border: solid lightgreen; */
+     display: flex;
+    
+}
+
+.project img{
+     width: 75%;
+}
+
+.project .pjt-txt{
+     width: 25%;
+}

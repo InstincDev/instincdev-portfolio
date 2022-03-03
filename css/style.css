@@ -1,4 +1,4 @@
-
+ 
 
 /* Box Model Hack */
 * {
@@ -37,26 +37,31 @@ body{
 /* LAYOUT
 /*******************************************/
 header{
-     /* border: solid red; */
      height: 10%;
      display: flex;
      margin: .5rem;
-     justify-content:space-between;
      align-items: center;
 }
 
 #home{
-     border: solid orange;
      height: 90%;
      display: flex;
      align-items: center;
      justify-content: center;
      text-align: center;
+     background: rgb(41,27,37);
+     background: radial-gradient(circle, rgba(41,27,37,1) 0%, rgba(19,4,19,1) 68%); 
 }
 
 #about{
-     border: solid yellow;
+     /* border: solid yellow; */
      height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: space-around;
+     justify-content: space-around;
+     background: no-repeat url("../assets/beach_bg.jpg") center center;
+      background-size: cover;
 }
 
 #projects{
@@ -83,33 +88,86 @@ footer{
 /*******************************************/
 
 /* Nav */
+
+.logo{
+     width:0;
+     justify-content: flex-start;
+     flex-grow: 1;
+}
+
+.logo img{
+     border-radius: 25%;
+}
+
+
+header h3{
+     /* margin: 0 auto; */
+     align-self: center;
+     justify-content: center;
+}
+
 nav{
      display: flex;
+     width:0;
      align-items: center;
-     justify-content: space-between;
+     justify-content: flex-end;
+     flex-grow:1;
 }
 .nav-bar{
      display: flex;
-     margin: 0 auto;
+     margin: 0;
      padding: 0;
      list-style: none;
 }
 
 .nav-bar a{
-     margin: 0 .5rem;
+     padding: 0 .3rem;
      color: #f6f6e9;
      text-decoration: none;
      font-size: 1rem;
 }
 
+
 /* Home */
+
+.home{
+     display: flex;
+     flex-direction: column;
+}
 
 .home img{
      border-radius: 50%;
-     width: 10rem;
+     width: 10rem; 
 }
 
+/* About Me */
+.about-txt{
+     text-align: center;
+     padding: 1rem;
+     font-size: 1.2rem;
+     background: #130413;
+     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+}
 
+.skills{
+     border: thin solid hotpink;
+     /* justify-content: flex-end; */
+     display:flex;
+}
+
+.reveal{
+     position: relative;
+     transform: translateY(150px);
+     opacity: 0;
+     transition: 2s all ease;
+   }
+   .reveal.active{
+     transform: translateY(0);
+     opacity: 1;
+   }
+/* Projects */
 
 .project{
      /* border: solid lightgreen; */

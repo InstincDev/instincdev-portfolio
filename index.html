@@ -9,6 +9,11 @@
 
     <!-- external CSS link -->
 
+    <script
+      src="https://kit.fontawesome.com/c5df4182a4.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +28,7 @@
     <!-- Header -->
     <header>
       <a href="#" class="logo"
-        ><img src="https://picsum.photos/35" alt="instincdev lotus flower logo"
+        ><img src="https://picsum.photos/65" alt="instincdev lotus flower logo"
       /></a>
 
       <h3>InstincDev</h3>
@@ -40,63 +45,60 @@
 
     <!-- Home -->
     <section id="home" class="home">
+      <div class="home-img">
+        <img src="https://picsum.photos/250" alt="image of Chanel" />
+      </div>
       <h1>I am Chanel</h1>
       <p>Your Local Software Engineer</p>
-	  <div class="home-img">
-		   <img src="https://picsum.photos/250" alt="image of Chanel" />
-	  </div>
-     
     </section>
 
     <!-- About -->
     <section id="about">
-		<div class="reveal">
-<section class="about-txt">
-        <h2>About Me</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          natus qui cum dolorem sunt ipsam voluptas nemo odio rerum laborum?
-		  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, adipisci?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est commodi
-          consectetur sit rem repellendus reprehenderit omnis, explicabo rerum
-          ea dolorem.
-		  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, cum!
-        </p>
-      </section>
-<section class="skills">
-		  <section class="skill">
-        <span class="icon">
-		</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          iste.
-        </p>
-      </section>
-      <section class="skill">
-        <span class="icon"></span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-          molestiae.
-        </p>
-      </section>
-      <section class="skill">
-        <span class="icon"></span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-          pariatur.
-        </p>
-      </section>
-	  </section>
-		</div>
-      
+      <div class="reveal">
+        <section class="about-txt">
+          <h2>About Me</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            natus qui cum dolorem sunt ipsam voluptas nemo odio rerum laborum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            adipisci?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est commodi
+            consectetur sit rem repellendus reprehenderit omnis, explicabo rerum
+            ea dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Libero!
+          </p>
+        </section>
+        <section class="skills">
+          <section class="skill skill_one">
+            <span class="icon"><i class="fa-regular fa-pen"></i> </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              iste.
+            </p>
+          </section>
+          <section class="skill skill_two">
+            <span class="icon"><i class="fas-regular fa-code"></i></span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+              molestiae.
+            </p>
+          </section>
+          <section class="skill skill_three">
+            <span class="icon"><i class="fas fa-desktop"></i></span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi, pariatur.
+            </p>
+          </section>
+        </section>
+      </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-		<div class="reveal">
-			<section class="project right">
+      <section class="project right">
         <section class="pjt-img">
           <img src="https://picsum.photos/620/225" alt="" />
         </section>
@@ -138,59 +140,57 @@
           </p>
         </section>
       </section>
-		</div>
-      
     </section>
 
     <!-- Contact Form -->
     <section id="contact">
-      <header>
-        <h3>Let's Get To Work</h3>
-        <p>contact me</p>
-      </header>
-      <section class="">
-        <div class="row g-2 m-2">
-          <div class="col-6">
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="floatingName"
-                placeholder="Full Name"
-              />
-              <label for="floatingName">Full Name</label>
+      <div class="form-contain">
+        <header class="contact-head">
+          <h3>Let's Get To Work</h3>
+          <p>contact me</p>
+        </header>
+        <section class="contact-form">
+          <div class="row col-6 g-2 m-4">
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingName"
+                  placeholder="Full Name"
+                />
+                <label for="floatingName">Full Name</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingEmail"
+                  placeholder="Email"
+                />
+                <label for="floatingEmail">Email</label>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="form-floating">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingEmail"
-                placeholder="Email"
-              />
-              <label for="floatingEmail">Email</label>
-            </div>
-          </div>
-        </div>
 
-        <div class="form-floating m-4">
-          <textarea
-            class="form-control"
-            placeholder="Leave a comment here"
-            id="floatingTextarea"
-          ></textarea>
-          <label for="floatingTextarea">Comments</label>
-        </div>
-      </section>
+          <div class="col-6 m-4">
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
 
     <!-- Socials -->
     <footer>
       <section>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span><i class="fab fa-twitter"></i></span>
+        <span><i class="fab fa-linkedin-in"></i></span>
+        <span><i class="fas fa-envelope"></i></span>
         <span></span>
       </section>
     </footer>

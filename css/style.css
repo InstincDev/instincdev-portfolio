@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap');
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -27,6 +29,7 @@ html {
 html,
 body {
   font-size: 62.5%;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
   height: 100%;
 }
 
@@ -40,11 +43,12 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
 header {
   height: 10%;
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   background: #130413;
 }
 
@@ -94,6 +98,12 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+#full-nav{
+  display:none;
+}
+
+
+
 /* Scroll Effect */
 .reveal {
   position: relative;
@@ -114,13 +124,14 @@ footer {
 }
 
 .logo img {
-  border-radius: 25%;
+  width:25%;
 }
 
 header h3 {
   align-self: center;
   justify-content: center;
-  font-size: 3rem;
+  margin-left: 4rem;
+  font-size: 4rem;
 }
 
 nav {
@@ -129,20 +140,60 @@ nav {
   align-items: center;
   justify-content: flex-end;
   flex-grow: 1;
+  padding:0 2rem;
 }
 
 .nav-bar {
   display: flex;
   margin: 0;   
-  gap: 0.6rem;
+  gap: 3.6rem;
   padding: 0;
   list-style: none;
+  
 }
 
 .nav-bar a {
   color: #f6f6e9;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.nav-bar a:hover{
+  color: #02d7df;
+}
+
+.hidden{
+  display: none;
+}
+
+.word {
+  position: absolute;
+  margin: .5rem -1rem;
+  width: 2rem;
+  opacity: 0;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Home */
@@ -155,18 +206,28 @@ nav {
   padding-bottom: 5%;
 }
 
+.home-img{
+  display: flex;
+  width: 30%;
+
+}
+
 .home img {
+  width: 100%;
   border-radius: 50%;
-  width: 20rem;
 }
 
 .home h1{
-  font-size: 7rem;
   margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight:300;
 }
 
 .home p{
-     font-size: 4rem;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3rem;
 }
 
 /* About Me */

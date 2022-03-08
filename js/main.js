@@ -17,3 +17,98 @@ function reveal() {
 
 // To check the scroll position on page load
 reveal();
+
+/*Navigation Animation */
+// inspired by Rotating text codepen by Rachel Smith https://codepen.io/rachsmith/pen/BNKJme
+
+const home = document.getElementById('nav-home');
+const about = document.getElementById('nav-about');
+const projects = document.getElementById('nav-projects');
+const contact = document.getElementById('nav-contact');
+
+// Show Home
+document.getElementById('show-home').addEventListener('mouseenter',showHome )
+document.getElementById('show-home').addEventListener('mouseleave',showHome )
+
+function showHome(){
+    home.classList.toggle("hidden")
+}
+
+// Show About
+document.getElementById('show-about').addEventListener('mouseenter',showAbout )
+document.getElementById('show-about').addEventListener('mouseleave',showAbout )
+
+function showAbout(){
+    about.classList.toggle("hidden")
+}
+
+// Show Projects
+document.getElementById('show-projects').addEventListener('mouseenter',showProjects )
+document.getElementById('show-projects').addEventListener('mouseleave',showProjects )
+
+function showProjects(){
+    projects.classList.toggle("hidden")
+}
+
+// Show Contact
+document.getElementById('show-contact').addEventListener('mouseenter',showContact )
+document.getElementById('show-contact').addEventListener('mouseleave',showContact )
+
+function showContact(){
+    contact.classList.toggle("hidden")
+}
+
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 950);

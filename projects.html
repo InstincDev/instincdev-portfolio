@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header id="full-nav">
       <a href="#" class="logo"
         ><img src="https://picsum.photos/65" alt="instincdev lotus flower logo"
       /></a>
@@ -35,7 +35,7 @@
 
       <nav>
         <ul class="nav-bar">
-          <a href="#home"><li>Home</li></a>
+          <a href="#full-nav"><li>Home</li></a>
           <a href="#about"><li>About</li></a>
           <a href="#projects"><li>Projects</li></a>
           <a href="#contact"><li>Contact</li></a>
@@ -43,58 +43,36 @@
       </nav>
     </header>
 
-    <!-- Home -->
-    <section id="home" class="home">
-      <div class="home-img">
-        <img src="./assets/me2.jpg" alt="image of Chanel" />
-      </div>
-      <h1>I am Chanel</h1>
-      <p>Your Local Software Engineer</p>
-    </section>
+	<header id="mobile-nav">
+		<a href="#" class="logo"
+		  ><img src="./assets/5.png" alt="instincdev lotus flower logo"
+		/></a>
+  
+		<h3>InstincDev</h3>
+  
+	  <nav>
+      <ul class="nav-bar ">
+          <a href="index.html" id="show-home">
+              <i class="fas fa-home"></i>
+              <li  id="nav-home"class="hidden word">Home</li>
+          </a>
+          <a href="#about" id="show-about">
+              <i class="fas fa-user"></i>
+              <li id="nav-about"class=" hidden word">About</li>
+          </a>
+          <a href="projects.html" id="show-projects">
+              <i class="far fa-file-code"></i>
+              <li id="nav-projects"class="hidden word"> Projects</li>
+          </a>
+        <a href="contact.html" id="show-contact">
+            <i class="far fa-address-card"></i>
+            <li id="nav-contact"class="hidden word">Contact</li>
+          </a>
+      </ul>
+    </nav>
+  
 
-    <!-- About -->
-    <section id="about">
-      <div class="reveal">
-        <section class="about-txt">
-          <h2>About Me</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            natus qui cum dolorem sunt ipsam voluptas nemo odio rerum laborum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            adipisci?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est commodi
-            consectetur sit rem repellendus reprehenderit omnis, explicabo rerum
-            ea dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Libero!
-          </p>
-        </section>
-        <section class="skills">
-          <section class="skill skill_one">
-            <span class="icon"><i class="fa-regular fa-pen"></i> </span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-              iste.
-            </p>
-          </section>
-          <section class="skill skill_two">
-            <span class="icon"><i class="fas-regular fa-code"></i></span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              molestiae.
-            </p>
-          </section>
-          <section class="skill skill_three">
-            <span class="icon"><i class="fas fa-desktop"></i></span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, pariatur.
-            </p>
-          </section>
-        </section>
-      </div>
-    </section>
+	  </header>
 
     <!-- Projects -->
     <section id="projects">
@@ -185,13 +163,12 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+      <!-- Footer -->
+      <footer>
         <section class="fineprint">
-            <ul class="legals">
-                <li>&copy 2022 All Rignts Reserved</li>
-                <li>Design & Images: <a href="/index.html#home"></a> InstincDev</li>
-            </ul>
+           
+                <small class="legals">&copy 2022 All Rignts Reserved <a href="/index.html#home">InstincDev</a></small>
+                
             </section>
       <section class="fineprint">
           <ul class="socials">
@@ -201,7 +178,6 @@
           </ul>
       </section>
     </footer>
-
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

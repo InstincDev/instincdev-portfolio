@@ -78,44 +78,42 @@
 
           <h3>InstincDev</h3>
 
-          <nav class="asideNav">
-              <ul class="navLinks">
-                  <a href="#fullNav" class="mobileNavLink">
-                      <i class="fas fa-home"></i>
-                      <li >Home</li>
-                  </a>
-                  <a href="#about" class="mobileNavLink">
-                      <i class="fas fa-user"></i>
-                      <li >About</li>
-                  </a>
-                  <a href="services.html" class="mobileNavLink">
-                    <i class="far fa-file-code"></i>
-                    <li >Services</li>
-                </a>
-                  <a href="projects.html" class="mobileNavLink">
-                      <i class="far fa-file-code"></i>
-                      <li >Projects</li>
-                  </a>
-                  <a href="contact.html" class="mobileNavLink">
-                      <i class="far fa-address-card"></i>
-                      <li>Contact</li>
-                  </a>
-              </ul>
-          </nav>
-          <section class="hamburger">
-            <input type="checkbox" id="myInput">
-    <label for="myInput">
-      <span class="bar top"></span>
-      <span class="bar middle"></span>
-      <span class="bar bottom"></span>
-    </label>
-          </section>
-          
+          <input type="checkbox" class="hamburger" id="hamburger">
+          <label for="hamburger" class="hamburgerToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+         </label>
+  
+        <div id="mobileMenu">
+          <ul class="mobileMenuInner">
+            <a href="index.html" class="mobileNavLink">
+              <i class="fas fa-home"></i>
+                <li >Home</li>
+            </a>
+            <a href="#about" class="mobileNavLink">
+              <i class="fas fa-user"></i>
+                <li >About</li>
+            </a>
+            <a href="services.html" class="mobileNavLink">
+              <i class="far fa-file-code"></i>
+                <li >Services</li>
+            </a>
+            <a href="projects.html" class="mobileNavLink">
+                <i class="far fa-file-code"></i>
+                <li >Projects</li>
+            </a>
+            <a href="contact.html" class="mobileNavLink">
+                <i class="far fa-address-card"></i>
+                <li>Contact</li>
+            </a>
+          </ul>
+       </div>
       </header>
-
+      
         <!-- Home -->
         <section id="home" class="home">
-            <div class="home-img">
+            <div class="homeImg">
                 <img src="./assets/me.jpg" alt="image of instincdev" />
             </div>
             <h1>I am Chanel</h1>
@@ -125,7 +123,7 @@
         <!-- About -->
         <section id="about">
             <div class="reveal">
-                <section class="about-txt">
+                <section class="aboutTxt">
                     <h2>About Me</h2>
                     <p>
                         Northwest Florida is where I work, live, and play! So I
@@ -193,8 +191,8 @@
             </div>
         </section>
 
-        <section class="contact-highlight">
-            <section class="highlight-txt">
+        <section class="contactHighlight">
+            <section class="highlightTxt">
                 <h4>Let an <span>Instincdev</span> Website work for you!</h4>
                 Contact me today to develop, update, or expand your web presence
                 in Northwest Florida and <span>beyond.</span>
@@ -212,7 +210,7 @@
                 </section>
 
                 <section class="address">
-                   <ul class="socials highlight-icon">
+                   <ul class="socials highlightIcon">
                     <a href="#">
                         <li><i class="fab fa-twitter"></i></li>
                     </a>
@@ -230,9 +228,9 @@
 
         <!-- Footer -->
         <footer>
-            <section class="footer-links">
+            <section class="footerLinks">
                 <h5>Quick Links</h5>
-                <ul class="pg-links">
+                <ul class="pgLinks">
                     <li>Portfolio</li>
                     <li>Services</li>
                     <li>Contact</li>
@@ -247,7 +245,7 @@
                 >
             </section>
             <section class="fineprint">
-                <ul class="socials footer-icon">
+                <ul class="socials footerIcon">
                     <a href="#"
                         ><li><i class="fab fa-twitter"></i></li
                     ></a>

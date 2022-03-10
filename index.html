@@ -38,53 +38,80 @@
 
     <body>
         <!-- Header -->
-        <header id="full-nav">
-            <a href="#" class="logo"
-                ><img
-                    src="https://picsum.photos/65"
-                    alt="instincdev lotus flower logo"
-            /></a>
-
-            <h3>InstincDev</h3>
-
-            <nav>
-                <ul class="nav-bar">
-                    <a href="#full-nav"><li>Home</li></a>
-                    <a href="#about"><li>About</li></a>
-                    <a href="#projects"><li>Projects</li></a>
-                    <a href="#contact"><li>Contact</li></a>
-                </ul>
-            </nav>
-        </header>
-
-        <header id="mobile-nav">
-            <a href="#" class="logo"
+        <header id="fullNav">
+            <a href="index.html" class="logo"
                 ><img src="./assets/5.png" alt="instincdev lotus flower logo"
             /></a>
 
             <h3>InstincDev</h3>
 
             <nav>
-                <ul class="nav-bar">
-                    <a href="#mobile-nav" id="show-home">
+                <ul class="navBar">
+                    <a href="#fullNav" id="showHome">
                         <i class="fas fa-home"></i>
-                        <li id="nav-home" class="hidden word">Home</li>
+                        <li id="navHome" class="hidden word">Home</li>
                     </a>
-                    <a href="#about" id="show-about">
+                    <a href="#about" id="showAbout">
                         <i class="fas fa-user"></i>
-                        <li id="nav-about" class="hidden word">About</li>
+                        <li id="navAbout" class="hidden word">About</li>
                     </a>
-                    <a href="projects.html" id="show-projects">
+                    <a href="services.html" id="showServices">
+                      <i class="far fa-file-code"></i>
+                      <li id="navServices" class="hidden word">Services</li>
+                  </a>
+                    <a href="projects.html" id="showProjects">
                         <i class="far fa-file-code"></i>
-                        <li id="nav-projects" class="hidden word">Projects</li>
+                        <li id="navProjects" class="hidden word">Projects</li>
                     </a>
-                    <a href="contact.html" id="show-contact">
+                    <a href="contact.html" id="showContact">
                         <i class="far fa-address-card"></i>
-                        <li id="nav-contact" class="hidden word">Contact</li>
+                        <li id="navContact" class="hidden word">Contact</li>
                     </a>
                 </ul>
             </nav>
         </header>
+
+        <header id="mobileNav">
+          <a href="index.html" class="logo"
+              ><img src="./assets/5.png" alt="instincdev lotus flower logo"
+          /></a>
+
+          <h3>InstincDev</h3>
+
+          <nav class="asideNav">
+              <ul class="navLinks">
+                  <a href="#fullNav" class="mobileNavLink">
+                      <i class="fas fa-home"></i>
+                      <li >Home</li>
+                  </a>
+                  <a href="#about" class="mobileNavLink">
+                      <i class="fas fa-user"></i>
+                      <li >About</li>
+                  </a>
+                  <a href="services.html" class="mobileNavLink">
+                    <i class="far fa-file-code"></i>
+                    <li >Services</li>
+                </a>
+                  <a href="projects.html" class="mobileNavLink">
+                      <i class="far fa-file-code"></i>
+                      <li >Projects</li>
+                  </a>
+                  <a href="contact.html" class="mobileNavLink">
+                      <i class="far fa-address-card"></i>
+                      <li>Contact</li>
+                  </a>
+              </ul>
+          </nav>
+          <section class="hamburger">
+            <input type="checkbox" id="myInput">
+    <label for="myInput">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </label>
+          </section>
+          
+      </header>
 
         <!-- Home -->
         <section id="home" class="home">
@@ -175,9 +202,7 @@
             </section>
             <section class="location">
                 <section class="address">
-                    <a href="#">
                         <p>P.O. Box 6421 Navarre School Rd Navarre, Fl 32566</p>
-                    </a>
                 </section>
 
                 <section class="address">

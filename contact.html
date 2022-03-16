@@ -1,94 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Your description goes here" />
-        <meta name="keywords" content="one, two, three" />
-    
-        <title>About Me</title>
-    
-        <!-- external CSS link -->
-    
-        <script
-          src="https://kit.fontawesome.com/c5df4182a4.js"
-          crossorigin="anonymous"
-        ></script>
-    
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          crossorigin="anonymous"
-        />
-    
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/style.css" />
-      </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+        name="description"
+        content=" We will create a website that will showcase your business, menue, resume, and much more. Proudly serving Escambia, Santa Rosa, Okaloosa, and Walton Counties. Experience InstincDev Development and Design."
+    />
+    <meta
+        name="keywords"
+        content="instincdev, website, web developer, software engineer"
+    />
+
+    <title>InstinvDev</title>
+
+    <!-- external CSS link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet"
+    />
+    <script
+        src="https://kit.fontawesome.com/c5df4182a4.js"
+        crossorigin="anonymous"
+    ></script>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
 <body>
-    <header id="mobile-nav">
-		<a href="#" class="logo"
-		  ><img src="./assets/5.png" alt="instincdev lotus flower logo"
-		/></a>
-  
-		<h3>InstincDev</h3>
-  
-	  <nav>
-      <ul class="nav-bar ">
-          <a href="#mobile-nav" id="show-home">
-              <i class="fas fa-home"></i>
-              <li  id="nav-home"class="hidden word">Home</li>
+          <!-- Header -->
+
+        <!-- Full Nav -->
+        <header id="fullNav">
+          <a href="index.html" class="logo"
+              ><img src="./assets/5.png" alt="instincdev lotus flower logo"
+          /></a>
+
+          <h3>InstincDev</h3>
+
+          <nav>
+              <ul class="navBar">
+                  <a href="#fullNav" id="showHome">
+                      <i class="fas fa-home"></i>
+                      <li id="navHome" class="hidden word">Home</li>
+                  </a>
+                  <a href="#about" id="showAbout">
+                      <i class="fas fa-user"></i>
+                      <li id="navAbout" class="hidden word">About</li>
+                  </a>
+                  <a href="services.html" id="showServices">
+                    <i class="far fa-file-code"></i>
+                    <li id="navServices" class="hidden word">Services</li>
+                </a>
+                  <a href="projects.html" id="showProjects">
+                      <i class="far fa-file-code"></i>
+                      <li id="navProjects" class="hidden word">Projects</li>
+                  </a>
+                  <a href="contact.html" id="showContact">
+                      <i class="far fa-address-card"></i>
+                      <li id="navContact" class="hidden word">Contact</li>
+                  </a>
+              </ul>
+          </nav>
+      </header>
+
+      <!-- Mobile Nav -->
+      <header id="mobileNav">
+        <a href="index.html" class="logo"
+            ><img src="./assets/5.png" alt="instincdev lotus flower logo"
+        /></a>
+
+        <h3>InstincDev</h3>
+
+        <input type="checkbox" class="hamburger" id="hamburger">
+        <label for="hamburger" class="hamburgerToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+       </label>
+
+      <div id="mobileMenu">
+        <ul class="mobileMenuInner">
+          <a href="index.html" class="mobileNavLink">
+            <i class="fas fa-home"></i>
+              <li >Home</li>
           </a>
-          <a href="#about" id="show-about">
-              <i class="fas fa-user"></i>
-              <li id="nav-about"class=" hidden word">About</li>
+          <a href="#about" class="mobileNavLink">
+            <i class="fas fa-user"></i>
+              <li >About</li>
           </a>
-          <a href="#projects" id="show-projects">
+          <a href="services.html" class="mobileNavLink">
+            <i class="far fa-file-code"></i>
+              <li >Services</li>
+          </a>
+          <a href="projects.html" class="mobileNavLink">
               <i class="far fa-file-code"></i>
-              <li id="nav-projects"class="hidden word"> Projects</li>
+              <li >Projects</li>
           </a>
-        <a href="#contact" id="show-contact">
-            <i class="far fa-address-card"></i>
-            <li id="nav-contact"class="hidden word">Contact</li>
+          <a href="contact.html" class="mobileNavLink">
+              <i class="far fa-address-card"></i>
+              <li>Contact</li>
           </a>
-      </ul>
-    </nav>
-  
+        </ul>
+     </div>
+    </header>
 
-	  </header>
-
-      <section class="banner">
-          <h1>Local businesses working together to better serve our community!</h1>
-          <div class="home-img">
-            <img src="./assets/me.jpg" alt="image of InstincDev">
-          </div>
+    <section id="banner" >
+      <section id="bannerTint">
       </section>
+      <section class="bannerContent">
+         <h1 class="bannerH1">
+            "I create customized proposal pacakges to meet your unique
+            busineses needs."
+        </h1>
+        <div class="bannerImg">
+            <img src="./assets/me.jpg" alt="image of InstincDev" />
+        </div>
+      </section>
+     
+    </section>
+
 
  <!-- Contact Form -->
  <section id="contact">
-    <div class="form-contain">
-      <header class="contact-head">
+    <div class="formContain">
+      <section class="contactHead">
         <h3>Let's Get To Work</h3>
-        <p>contact me</p>
-      </header>
-      <section class="contact-other">
+        <p>Proudly serving:</p>
+        <ul class="instincdev">
+          <li>Escambia,</li>
+          <li>Santa Rosa,</li>
+          <li>Okaloosa,</li>
+          <li>Walton </li>
+        </ul>
+        <span>counties and<span class="instincdev"> Beyond!</span></span>
+      </section>
+      <section class="contactOther">
         <!--email -->
         <section>
-          <a href=""></a>
+          <a href="#"></a>
         </section>
         <!--calendly -->
         <section>
-          <a href=""></a>
+          <a href="#"></a>
         </section>
         <!-- twitter -->
         <section>
-          <a href=""></a>
+          <a href="#"></a>
         </section>
         <!-- linkedin -->
         <section>
-          <a href=""></a>
+          <a href="#"></a>
         </section>
       </section>
-      <section class="contact-form">
+      <section class="contactForm">
         <div class=" col-12 m-4">
           <div class="col-6">
             <div class="form-floating">
@@ -126,16 +200,16 @@
 
    <!-- Footer -->
    <footer>
-    <section class="footer-links">
+    <section class="footerLinks">
         <h5>Quick Links</h5>
-        <ul class="pg-links">
+        <ul class="pgLinks">
             <li>Portfolio</li>
             <li>Services</li>
             <li>Contact</li>
             <li>About Us</li>
         </ul>
     </section>
-    <section class="fineprint">
+    <section class="fineprint copy">
         <img src="./assets/5.png" alt="instincdev lotus flower logo" />
         <small class="legals"
             >&copy 2022 All Rignts Reserved
@@ -143,7 +217,7 @@
         >
     </section>
     <section class="fineprint">
-        <ul class="socials footer-icon">
+        <ul class="socials footerIcon">
             <a href="#"
                 ><li><i class="fab fa-twitter"></i></li
             ></a>
@@ -156,5 +230,6 @@
         </ul>
     </section>
 </footer>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

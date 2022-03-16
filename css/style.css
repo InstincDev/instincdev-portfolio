@@ -201,6 +201,7 @@ footer {
     transition: 4.5s all ease;
     z-index: -1;
 }
+
 .reveal.active {
     transform: translateY(0%);
     opacity: 1;
@@ -273,8 +274,8 @@ nav {
 
 .hamburgerToggle {
     position: absolute;
-    height: 4rem;
-    width: 2.5rem;
+    height: 5rem;
+    width: 4rem;
     right: 0;
     margin: 6.5rem;
     transition: all 0.3s;
@@ -628,8 +629,14 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 /* Footer */
 
+.footerList{
+    display: flex;
+    gap: 1.5rem;
+}
+
 .footerLinks h5 {
     font-size: 2rem;
+
 }
 
 .footerLinks ul {
@@ -691,6 +698,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 4rem;
+    padding: 0 2rem;
    border: .5rem solid #02d7df;
     background: #130413aa;
 }
@@ -780,8 +788,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 /** Contact Page **/
 /*************************************/
 
-/* Contact Form */
-
 .formContain {
     width: 75%;
     background: #130413aa;
@@ -803,28 +809,36 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 
 .contactHead p {
+    margin: 0;
+    padding: 0;
     color: #02d7df;
     font-size: 3rem;
 }
 
 .contactHead ul{
     display: flex;
-    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
     list-style: none;
+}
+
+.contactHead li{
+    padding: 0 0.5rem;
 }
 
 .contactHead span{
     color:#02d7df;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .contactForm {
-    border: solid #02d7df;
     display: flex;
     flex-direction: column;
     margin: 4rem;
+    margin-top: 2rem;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 #floatingTextarea {
@@ -835,11 +849,49 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     align-items: center;
 }
 
+.visitorInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 label {
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
     color: #130413;
 }
 
 /*************************************/
 /** 404 Page **/
 /*************************************/
+
+
+
+
+
+
+/*************************************/
+/** Media Queries **/
+/*************************************/
+@media all and (min-width: 800px){
+    /* Landing page */
+    .logo {
+        width: 15%;
+        height: 100%;
+    }
+ 
+    /* Scroll Effect */
+.reveal {
+    transform: translateY(40%); 
+}
+
+.reveal.active {
+    transform: translateY(20%);
+    opacity: 1;
+}
+
+/* Services Page */
+
+
+}

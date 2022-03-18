@@ -188,6 +188,10 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+#desktopServices{
+    display: none;
+}
+
 .centered {
     text-align: center;
     list-style-type: none;
@@ -217,8 +221,7 @@ footer {
 
 /* Nav */
 .logo {
-    width: 20%;
-    height: 100%;
+    width: 100%;
     background: 0;
 }
 
@@ -228,18 +231,19 @@ footer {
 }
 
 header h3 {
-    width: 0;
-    font-size: 5rem;;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    width: auto;
 }
 
 nav {
     display: flex;
     position: relative;
-    width: 0;
+    width: auto;
     align-items: center;
-    justify-content: flex-end;
-    flex-grow: 1;
-    padding: 0 2rem;
+    justify-content: center;
+    padding: 0;
 }
 
 .navBar {
@@ -528,12 +532,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     );
 }
 
-.homeService p {
-    margin: 1.5rem 2rem;
-    padding: 1rem 0;
-    text-align: justify;
-    font-size: 3rem;
-}
 
 .homeServices a {
     padding: 0 1rem;
@@ -544,7 +542,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
         rgba(2, 215, 223, 0.5931159546656638) 26%,
         rgba(97, 166, 171, 1) 66%
     );
-    cursor: pointer;
 }
 
 /** Banner **/
@@ -622,14 +619,13 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     gap: 1rem;
 }
 
-.address {
-    text-align: center;
-    padding: 0.5rem;
-    color: #130413;
+#highlightIcon{
+    padding:0;
+    
 }
 
-.address span {
-    display: block;
+#highlightIcon i{
+    font-size: 3.5rem;
 }
 
 /* Footer */
@@ -645,8 +641,18 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .footerLinks ul {
     padding: 0;
+    
     font-size: 1.5rem;
     list-style: none;
+}
+
+.pgLinks a{
+    color: #f6f6e9;
+}
+
+
+.pgLinks a:hover{
+    color:#61a6ab;
 }
 
 .fineprint {
@@ -684,7 +690,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 .socials i {
     padding-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #02d7df;
 }
 
@@ -942,46 +948,62 @@ label {
     }
 
     .navContain{
-        max-width: 926px;
+        max-width: 1600px;
         margin: 0 auto;
     }
 
     /* Nav */
     .logo {
-        width: 15%;
-        height: 200%;
+        max-width: 150px;
+        height: 150%;
     }
 
     header h3 {
-        margin: 0 20%;
         font-size: 5.5rem;
     }
 
     .navBar {
         background: 0;
+        gap: 2rem;
     }
 
-    .reveal {
-        position: relative;
-        transform: translateY(40%);
-        opacity: 0;
-        transition: 8.5s all ease;
-        z-index: -1;
-    }
-    
-    .reveal.active {
-        transform: translateY(50);
-        opacity: 1;
-    }
+    /*  About Page */
+#about {
+    height: 200%;
 
-    .about{
-        height: 480%;
-    }
 }
 
-@media all and (min-width: 1199px) {
-    .logo {
-        width: 15%;
-        height: 200%;
-    }
+
+.aboutTxt .contact_btn {
+    align-self: center;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+        162deg,
+        rgba(2, 215, 223, 0.5931159546656638) 26%,
+        rgba(97, 166, 171, 1) 66%
+    );
+}
+
+.about .contact_btn:active {
+    background: linear-gradient(
+        162deg,
+        rgba(97, 166, 171, 1) 26%,
+        rgba(2, 215, 223, 0.5931159546656638) 66%
+    );
+}
+
+.homeServices {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.homeService {
+    width: 35%;
+    gap: 1.5rem;
+}
+
+
 }

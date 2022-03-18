@@ -89,7 +89,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem 2.5rem;
+    padding: 0 2.5rem;
     background: #130413;
 }
 
@@ -112,9 +112,9 @@ footer {
     position: relative;
     top: 10%;
     width: 100%;
-    height: 15%;
+    height: 20%;
     z-index: -1;
-    background: url("../assets/close_up_code.png") no-repeat;
+    background: url("../assets/close_up_code.png") no-repeat 15%;
     background-size: cover;
 }
 
@@ -122,7 +122,7 @@ footer {
     width: 100%;
     height: 100%;
     padding: 0;
-    background: url("../assets/skyline.jpg") no-repeat 10%;
+    background: url("../assets/skyline2.jpg") no-repeat;
     background-size: cover;
     opacity: 0.5;
 }
@@ -207,11 +207,18 @@ footer {
     opacity: 1;
 }
 
+.navContain {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+
 /* Nav */
 .logo {
     width: 20%;
     height: 100%;
-    justify-content: center;
     background: 0;
 }
 
@@ -221,8 +228,8 @@ footer {
 }
 
 header h3 {
-    margin: 0 15%;
-    font-size: 7rem;
+    width: 0;
+    font-size: 5rem;;
 }
 
 nav {
@@ -237,8 +244,8 @@ nav {
 
 .navBar {
     display: flex;
-    margin: 0;
-    gap: 3.6rem;
+    margin: 0 auto;
+    gap: 3rem;
     padding: 0.5rem 1.5rem;
     list-style: none;
     background: #61a6ab;
@@ -374,17 +381,17 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .word {
     position: absolute;
-    margin: 0.5rem -1rem;
-    width: 2rem;
+    margin: 0.5rem 0.8rem;
+    width: 1rem;
     opacity: 0;
-    writing-mode: vertical-lr;
+    writing-mode: horizontal-lr;
     text-orientation: upright;
 }
 
 .letter {
     display: inline-block;
     position: relative;
-    transform: translateZ(25px);
+    transform: translateZ(15px);
     transform-origin: 50% 50% 25px;
 }
 
@@ -415,6 +422,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 .homeImg {
     display: flex;
     width: 30%;
+    max-width: 240px;
 }
 
 .home img {
@@ -539,9 +547,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     cursor: pointer;
 }
 
-
 /** Banner **/
-
 
 .bannerContent {
     position: absolute;
@@ -626,17 +632,15 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     display: block;
 }
 
-
 /* Footer */
 
-.footerList{
+.footerList {
     display: flex;
     gap: 1.5rem;
 }
 
 .footerLinks h5 {
     font-size: 2rem;
-
 }
 
 .footerLinks ul {
@@ -692,44 +696,43 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 /** Services **/
 /***********************************/
 
-
 .service {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 4rem;
     padding: 0 2rem;
-   border: .5rem solid #02d7df;
+    border: 0.5rem solid #02d7df;
     background: #130413aa;
 }
 
-.service h3{
+.service h3 {
     font-size: 4rem;
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     background: #130413;
 }
 
 .service p {
     font-size: 3.5rem;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
 
-.service ul{
+.service ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
     font-size: 3rem;
-    list-style-type:url("../assets/5.png");
+    list-style-type: url("../assets/5.png");
 }
 
-.service a{
+.service a {
     text-align: center;
     font-size: 3.5rem;
     font-weight: 400;
-    border-top: .5rem solid #130413 ;
+    border-top: 0.5rem solid #130413;
     cursor: pointer;
 }
 
@@ -804,7 +807,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     background: #f6f6e9;
 }
 
-.contactHead h3{
+.contactHead h3 {
     font-size: 4rem;
 }
 
@@ -815,7 +818,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     font-size: 3rem;
 }
 
-.contactHead ul{
+.contactHead ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -823,12 +826,12 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     list-style: none;
 }
 
-.contactHead li{
+.contactHead li {
     padding: 0 0.5rem;
 }
 
-.contactHead span{
-    color:#02d7df;
+.contactHead span {
+    color: #02d7df;
     font-size: 2rem;
 }
 
@@ -849,7 +852,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     align-items: center;
 }
 
-.visitorInfo{
+.visitorInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -866,32 +869,119 @@ label {
 /** 404 Page **/
 /*************************************/
 
-
-
-
-
-
 /*************************************/
 /** Media Queries **/
 /*************************************/
-@media all and (min-width: 800px){
+@media all and (max-width: 767px) {
     /* Landing page */
     .logo {
         width: 15%;
-        height: 100%;
+        height: 150%;
     }
- 
+
     /* Scroll Effect */
-.reveal {
-    transform: translateY(40%); 
+    .reveal {
+        transform: translateY(40%);
+    }
+
+    .reveal.active {
+        transform: translateY(20%);
+        opacity: 1;
+    }
+
+    #about {
+        height: 180%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 3;
+    }
+
+    /* Banner */
+
+    #banner {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+        background: url("../assets/close_up_code.png") no-repeat;
+        background-size: cover;
+    }
+
+    #bannerTint {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        background: url("../assets/skyline2.jpg") no-repeat 10%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+
+    .bannerContent {
+        position: absolute;
+        top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        padding: 2.5rem;
+        z-index: 2;
+    }
+
+    /* Services Page */
 }
 
-.reveal.active {
-    transform: translateY(20%);
-    opacity: 1;
+@media all and (min-width: 991px) {
+    #mobileNav {
+        display: none;
+    }
+    #fullNav {
+        display: flex;
+    }
+
+    .navContain{
+        max-width: 926px;
+        margin: 0 auto;
+    }
+
+    /* Nav */
+    .logo {
+        width: 15%;
+        height: 200%;
+    }
+
+    header h3 {
+        margin: 0 20%;
+        font-size: 5.5rem;
+    }
+
+    .navBar {
+        background: 0;
+    }
+
+    .reveal {
+        position: relative;
+        transform: translateY(40%);
+        opacity: 0;
+        transition: 8.5s all ease;
+        z-index: -1;
+    }
+    
+    .reveal.active {
+        transform: translateY(50);
+        opacity: 1;
+    }
+
+    .about{
+        height: 480%;
+    }
 }
 
-/* Services Page */
-
-
+@media all and (min-width: 1199px) {
+    .logo {
+        width: 15%;
+        height: 200%;
+    }
 }

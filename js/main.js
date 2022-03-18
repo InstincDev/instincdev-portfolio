@@ -21,38 +21,47 @@ reveal();
 /*Navigation Animation */
 // inspired by Rotating text codepen by Rachel Smith https://codepen.io/rachsmith/pen/BNKJme
 
-const home = document.getElementById('nav-home');
-const about = document.getElementById('nav-about');
-const projects = document.getElementById('nav-projects');
-const contact = document.getElementById('nav-contact');
+const home = document.getElementById('navHome');
+const about = document.getElementById('navAbout');
+const service = document.getElementById('navServices');
+const projects = document.getElementById('navProjects');
+const contact = document.getElementById('navContact');
 
 // Show Home
-document.getElementById('show-home').addEventListener('mouseenter',showHome )
-document.getElementById('show-home').addEventListener('mouseleave',showHome )
+document.getElementById('showHome').addEventListener('mouseenter',showHome )
+document.getElementById('showHome').addEventListener('mouseleave',showHome )
 
 function showHome(){
     home.classList.toggle("hidden")
 }
 
 // Show About
-document.getElementById('show-about').addEventListener('mouseenter',showAbout )
-document.getElementById('show-about').addEventListener('mouseleave',showAbout )
+document.getElementById('showAbout').addEventListener('mouseenter',showAbout )
+document.getElementById('showAbout').addEventListener('mouseleave',showAbout )
 
 function showAbout(){
     about.classList.toggle("hidden")
 }
 
+// Show Services
+document.getElementById('showServices').addEventListener('mouseenter',showServices )
+document.getElementById('showServices').addEventListener('mouseleave',showServices )
+
+function showServices(){
+    service.classList.toggle("hidden")
+}
+
 // Show Projects
-document.getElementById('show-projects').addEventListener('mouseenter',showProjects )
-document.getElementById('show-projects').addEventListener('mouseleave',showProjects )
+document.getElementById('showProjects').addEventListener('mouseenter',showProjects )
+document.getElementById('showProjects').addEventListener('mouseleave',showProjects )
 
 function showProjects(){
     projects.classList.toggle("hidden")
 }
 
 // Show Contact
-document.getElementById('show-contact').addEventListener('mouseenter',showContact )
-document.getElementById('show-contact').addEventListener('mouseleave',showContact )
+document.getElementById('showContact').addEventListener('mouseenter',showContact )
+document.getElementById('showContact').addEventListener('mouseleave',showContact )
 
 function showContact(){
     contact.classList.toggle("hidden")

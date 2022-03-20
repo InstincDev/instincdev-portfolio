@@ -167,7 +167,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50% auto;
+    width: 80%;
+    margin: 40% auto;
     background: #130413cc;
 }
 
@@ -178,7 +179,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 25% 0;
+    width: 80%;
+    margin: 10% auto 15%;
     gap: 4rem;
 }
 
@@ -706,7 +708,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 4rem;
-    padding: 0 2rem;
+    padding: 0;
     border: 0.5rem solid #02d7df;
     background: #130413aa;
 }
@@ -720,7 +722,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .service p {
     font-size: 3.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2.5rem;
 }
 
 .service ul {
@@ -728,11 +730,21 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 0 auto;
+    margin: 1rem 2.5rem;
     font-size: 3rem;
-    list-style-type: url("../assets/5.png");
 }
 
+
+.service li{
+    margin: 0;
+    padding: 0 4rem .5rem 5rem;
+    list-style: none;
+    background-image: url(../assets/5.png);
+    background-repeat: no-repeat;
+    background-position: -2rem -2rem;
+    background-size: 9rem;
+
+}
 .service a {
     text-align: center;
     font-size: 3.5rem;
@@ -862,6 +874,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 label {
@@ -877,67 +890,142 @@ label {
 /*************************************/
 /** Media Queries **/
 /*************************************/
-@media all and (max-width: 767px) {
-    /* Landing page */
-    .logo {
-        width: 15%;
-        height: 150%;
-    }
-
-    /* Scroll Effect */
-    .reveal {
-        transform: translateY(40%);
-    }
-
-    .reveal.active {
-        transform: translateY(20%);
-        opacity: 1;
-    }
-
+@media all and (max-width: 500px) {
     #about {
-        height: 180%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        border:solid red;
+        height: 350%;
     }
-
-    /* Banner */
-
-    #banner {
-        position: relative;
-        top: 10%;
-        width: 100%;
-        height: 20%;
-        z-index: -1;
-        background: url("../assets/close_up_code.png") no-repeat;
-        background-size: cover;
-    }
-
-    #bannerTint {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        background: url("../assets/skyline2.jpg") no-repeat 10%;
-        background-size: cover;
-        opacity: 0.5;
-    }
-
-    .bannerContent {
-        position: absolute;
-        top: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-        padding: 2.5rem;
-        z-index: 2;
-    }
-
-    /* Services Page */
 }
 
-@media all and (min-width: 991px) {
+
+@media all and (max-width: 1047px) {
+
+    /* Nav */
+    .logo {
+       width: 15%;
+        min-width: 80px;
+    }
+
+    header h3 {
+        margin-right: 15rem;
+    font-size: 5rem;
+    }
+
+    .navBar {
+        background: 0;
+        gap: 2rem;
+    }
+
+    /*  About Page */
+#about {
+    height: 225%;
+
+}
+
+.aboutTxt{
+    width: 80%;
+    margin: 0 auto 4rem; 
+
+}
+
+.aboutTxt .contact_btn {
+    align-self: center;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+        162deg,
+        rgba(2, 215, 223, 0.5931159546656638) 26%,
+        rgba(97, 166, 171, 1) 66%
+    );
+}
+
+.aboutTxt .contact_btn:active {
+    background: linear-gradient(
+        162deg,
+        rgba(97, 166, 171, 1) 26%,
+        rgba(2, 215, 223, 0.5931159546656638) 66%
+    );
+}
+
+/* .homeServices {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+} */
+
+.homeService {
+    width: 80%;
+    min-width: 235px;
+    gap: 1.5rem;
+}
+
+.homeService a{
+    padding: 0 0.5rem;
+    font-size: 2.5rem;
+}
+
+/** Banner **/
+
+#banner {
+    top:3%;
+    height: 33%;
+    max-height: 400px;
+    background: url("../assets/skyline2.jpg") no-repeat;
+    background-size: cover;
+}
+
+#bannerTint {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: url("../assets/close_up_code.png") no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.bannerContent {
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1211px;
+    z-index: 2;
+}
+
+.bannerImg {
+    display: flex;
+    width: 12%;
+}
+
+.bannerH1 {
+    align-self: center;
+    padding: 1.5rem;
+    color: #f6f6e9;
+    font-size: 2.2rem;
+    font-weight: 400;
+    border-radius: 5rem;
+    background: rgba(41, 27, 37, 0.3);
+}
+
+.bannerImg img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.col-6{
+  width: 90%;
+}
+
+
+
+
+}
+
+@media all and (min-width:1048px) {
     #mobileNav {
         display: none;
     }
@@ -966,7 +1054,11 @@ label {
 
 }
 
+.aboutTxt{
+    width: 80%;
+    margin: 0 auto 4rem; 
 
+}
 .aboutTxt .contact_btn {
     align-self: center;
     margin: 1.5rem 0;

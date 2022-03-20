@@ -723,8 +723,12 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 
 .service p {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 0.5rem 2.5rem;
+}
+
+.service .instincdev{
+    font-size: 4rem;
 }
 
 .service ul {

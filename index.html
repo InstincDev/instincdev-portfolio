@@ -51,8 +51,8 @@
 
                 <nav>
                     <ul class="navBar">
-                        <a href="index.html" id="showHome" >
-                            <i class="fas fa-home "></i>
+                        <a href="index.html" id="showHome">
+                            <i class="fas fa-home"></i>
                             <li id="navHome" class="hidden word">Home</li>
                         </a>
                         <a href="index.html#about" id="showAbout">
@@ -109,7 +109,7 @@
                             <li>About</li>
                         </a>
                         <a href="services.html" class="mobileNavLink">
-                           <i class="fas fa-laptop-code"></i>
+                            <i class="fas fa-laptop-code"></i>
                             <li>Services</li>
                         </a>
                         <!-- <a href="projects.html" class="mobileNavLink">
@@ -138,7 +138,7 @@
 
         <!-- About -->
         <section id="about">
-            <div class="scroller ">
+            <div class="scroller">
                 <section class="aboutTxt">
                     <h2>About Me</h2>
                     <p>Northwest Florida is where I work, live, and play!</p>
@@ -183,16 +183,39 @@
                     </section>
                     <section class="locations">
                         <ul id="highlightIcon" class="socials">
-                            <a class="" title="Calendly" href="#" target="_blank">
-                                <li><i class="fas fa-video"></i></li>
-                            </a>
-                            <a href="https://twitter.com/instincdev" target="_blank">  
+                            <li title="Calendly">
+                                <!-- Calendly link widget begin -->
+                                <link
+                                    href="https://assets.calendly.com/assets/external/widget.css"
+                                    rel="stylesheet"
+                                />
+                                <script
+                                    src="https://assets.calendly.com/assets/external/widget.js"
+                                    type="text/javascript"
+                                    async
+                                ></script>
+                                <a
+                                    href=""
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'});return false;"
+                                    ><i class="fas fa-video"></i
+                                ></a>
+                                <!-- Calendly link widget end -->
+                            </li>
+                            <a
+                                title="Twitter"
+                                href="https://twitter.com/instincdev"
+                                target="_blank"
+                            >
                                 <li><i class="fab fa-twitter"></i></li>
                             </a>
-                            <a href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/" target="_blank">
+                            <a
+                                title="LinkedIn"
+                                href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
+                                target="_blank"
+                            >
                                 <li><i class="fab fa-linkedin-in"></i></li>
                             </a>
-                            <a href="contact.html">
+                            <a title="Contact" href="contact.html">
                                 <li><i class="fas fa-envelope"></i></li>
                             </a>
                         </ul>
@@ -202,14 +225,11 @@
                 <!-- Sevices -->
                 <section class="homeServices">
                     <section class="homeService">
-                        <span class="icon"
-                            ><i class="fas fa-pen"></i>
-                        </span>
+                        <span class="icon"><i class="fas fa-pen"></i> </span>
                         <a href="services.html">Need A Web Developer</a>
                     </section>
                     <section class="homeService">
-                        <span class="icon"
-                            ><i class="fas fa-code"></i></span>
+                        <span class="icon"><i class="fas fa-code"></i></span>
                         <a href="services.html#design">Need A New Design</a>
                     </section>
 
@@ -238,7 +258,6 @@
                 <div class="footerList">
                     <ul class="pgLinks">
                         <!-- <a href="projects.html"><li>Portfolio</li></a> -->
-                        
                     </ul>
                     <ul class="pgLinks">
                         <a href="services.html"><li>Services</li></a>
@@ -256,13 +275,22 @@
             </section>
             <section class="fineprint">
                 <ul class="socials footerIcon">
-                    <a title="Twitter" href="https://twitter.com/instincdev" target="_blank"
+                    <a
+                        title="Twitter"
+                        href="https://twitter.com/instincdev"
+                        target="_blank"
                         ><li><i class="fab fa-twitter"></i></li
                     ></a>
-                    <a title="LinkedIn" href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/" target="_blank"
+                    <a
+                        title="LinkedIn"
+                        href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
+                        target="_blank"
                         ><li><i class="fab fa-linkedin-in"></i></li
                     ></a>
-                    <a title="GitHub" href="https://github.com/InstincDev" target="_blank"
+                    <a
+                        title="GitHub"
+                        href="https://github.com/InstincDev"
+                        target="_blank"
                         ><li><i class="fab fa-github-alt"></i></li
                     ></a>
                     <a title="Contact" href="contact.html"

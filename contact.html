@@ -60,7 +60,7 @@
                             <li id="navAbout" class="hidden word">About</li>
                         </a>
                         <a href="services.html" id="showServices">
-                          <i class="fas fa-laptop-code"></i>
+                            <i class="fas fa-laptop-code"></i>
                             <li id="navServices" class="hidden word">
                                 Services
                             </li>
@@ -109,7 +109,7 @@
                             <li>About</li>
                         </a>
                         <a href="services.html" class="mobileNavLink">
-                          <i class="fas fa-laptop-code"></i>
+                            <i class="fas fa-laptop-code"></i>
                             <li>Services</li>
                         </a>
                         <!-- <a href="projects.html" class="mobileNavLink">
@@ -159,18 +159,41 @@
                 </section>
                 <section class="contactOther">
                     <ul id="highlightIcon" class="socials">
-                      <a class="" title="Calendly" href="#" >
-                        <li><i class="fas fa-video"></i></li>
-                    </a>
-                        <a href="https://twitter.com/instincdev" target="_blank"
+            
+                        <li title="Calendly">
+                            <!-- Calendly link widget begin -->
+                            <link
+                                href="https://assets.calendly.com/assets/external/widget.css" 
+                                rel="stylesheet"
+                            />
+                            <script
+                                src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"
+                                async
+                            ></script>
+                            <a
+                                href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'});return false;"
+                                ><i class="fas fa-video"></i
+                            ></a>
+                            <!-- Calendly link widget end -->
+                        </li>
+                        <a title="Twitter" href="https://twitter.com/instincdev" target="_blank"
                             ><li><i class="fab fa-twitter"></i></li
                         ></a>
-                        <a href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"  target="_blank"
+                        <a title="LinkedIn"
+                            href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
+                            target="_blank"
                             ><li><i class="fab fa-linkedin-in"></i></li
                         ></a>
                     </ul>
                 </section>
-                <form class="contactForm" name="contact" method="POST" data-netlify="true" >
+                <form
+                    class="contactForm"
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                >
                     <div class="visitorInfo col-12 m-4">
                         <div class="col-6">
                             <div class="form-floating">
@@ -216,10 +239,9 @@
                 <div class="footerList">
                     <ul class="pgLinks">
                         <!-- <a href="projects.html"><li>Portfolio</li></a> -->
-                       
                     </ul>
                     <ul class="pgLinks">
-                         <a href="services.html"><li>Services</li></a>
+                        <a href="services.html"><li>Services</li></a>
                         <a href="contact.html"><li>Contact</li></a>
                         <a href="index.html#about"><li>About Us</li></a>
                     </ul>
@@ -234,13 +256,22 @@
             </section>
             <section class="fineprint">
                 <ul class="socials footerIcon">
-                    <a title="Twitter" href="https://twitter.com/instincdev" target="_blank"
+                    <a
+                        title="Twitter"
+                        href="https://twitter.com/instincdev"
+                        target="_blank"
                         ><li><i class="fab fa-twitter"></i></li
                     ></a>
-                    <a title="LinkedIn" href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/" target="_blank"
+                    <a
+                        title="LinkedIn"
+                        href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
+                        target="_blank"
                         ><li><i class="fab fa-linkedin-in"></i></li
                     ></a>
-                    <a title="GitHub" href="https://github.com/InstincDev" target="_blank"
+                    <a
+                        title="GitHub"
+                        href="https://github.com/InstincDev"
+                        target="_blank"
                         ><li><i class="fab fa-github-alt"></i></li
                     ></a>
                     <a title="Contact" href="contact.html"

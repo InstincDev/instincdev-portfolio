@@ -642,13 +642,15 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .footerLinks ul {
     padding: 0;
-    
+    display: flex;
     font-size: 1.5rem;
     list-style: none;
 }
 
 .pgLinks a{
     color: #f6f6e9;
+    padding: 0 .5rem;
+    background: none;
 }
 
 
@@ -890,12 +892,7 @@ label {
 /*************************************/
 /** Media Queries **/
 /*************************************/
-@media all and (max-width: 500px) {
-    #about {
-        border:solid red;
-        height: 350%;
-    }
-}
+
 
 
 @media all and (max-width: 1047px) {
@@ -916,9 +913,9 @@ label {
         gap: 2rem;
     }
 
-    /*  About Page */
-#about {
-    height: 225%;
+  /*   About Page */
+ #about {
+    height: 120%;
 
 }
 

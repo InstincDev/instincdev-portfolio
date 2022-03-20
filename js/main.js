@@ -1,4 +1,18 @@
 
+document.getElementById('about').addEventListener("resize", checkSize)
+
+function checkSize(event){
+ 
+  if(document.getElementById("about").style.width >= '1046px'){
+ event.preventDefault();
+    document.querySelector(".scroller").classList.toggle('reveal');
+  }
+}
+
+
+
+
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {

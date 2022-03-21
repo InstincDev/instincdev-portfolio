@@ -480,6 +480,11 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
+.aboutTxt .instincdev{
+    font-size: 4rem;
+}
+
+
 .aboutTxt a {
     align-self: center;
     margin: 1.5rem 0;
@@ -549,7 +554,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .bannerContent {
     position: absolute;
-    top: 1rem;
+    top: 6.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -568,7 +573,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     align-self: center;
     padding: 1.5rem;
     color: #f6f6e9;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
     border-radius: 5rem;
     background: rgba(41, 27, 37, 0.3);
@@ -958,8 +963,8 @@ form .contact_btn:active {
 .aboutTxt{
     width: 80%;
     margin: 0 auto 4rem; 
-
 }
+
 
 .aboutTxt .contact_btn {
     align-self: center;
@@ -981,11 +986,7 @@ form .contact_btn:active {
     );
 }
 
-/* .homeServices {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-} */
+
 
 .homeService {
     width: 80%;
@@ -1019,26 +1020,28 @@ form .contact_btn:active {
 
 .bannerContent {
     position: absolute;
-    top: 35%;
+    top: 7.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin: 0 auto;
-    max-width: 1211px;
+    /* max-width: 1211px; */
     z-index: 2;
 }
 
 .bannerImg {
     display: flex;
     width: 12%;
+    min-width: 104px;
+    min-height: 150px;
 }
 
 .bannerH1 {
     align-self: center;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     color: #f6f6e9;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 400;
     border-radius: 5rem;
     background: rgba(41, 27, 37, 0.3);
@@ -1052,9 +1055,6 @@ form .contact_btn:active {
 .col-6{
   width: 90%;
 }
-
-
-
 
 }
 
@@ -1126,9 +1126,8 @@ form .contact_btn:active {
 /** Banner **/
 
 #banner {
-    top:3%;
+    top:1rem;
     height: 33%;
-    /* max-height: 1220px; */
     background: url("../assets/skyline2.jpg") no-repeat;
     background-size: cover;
 }
@@ -1146,19 +1145,21 @@ form .contact_btn:active {
 
 .bannerContent {
     position: absolute;
-    top: 25%;
+    top: 6.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin: 0 auto;
-    max-width: 1211px;
+    /* max-width: 1211px; */
     z-index: 2;
 }
 
 .bannerImg {
     display: flex;
     width: 12%;
+    max-width: 145px;
+    min-height: 150px;
 }
 
 .bannerH1 {

@@ -168,7 +168,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin: 40% auto;
+    min-width: 450px;
+    margin: 10% auto 15%;
     background: #130413cc;
 }
 
@@ -190,7 +191,7 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-#desktopServices{
+#desktopServices {
     display: none;
 }
 
@@ -215,7 +216,7 @@ footer {
 .navContain {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -480,10 +481,9 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
-.aboutTxt .instincdev{
+.aboutTxt .instincdev {
     font-size: 4rem;
 }
-
 
 .aboutTxt a {
     align-self: center;
@@ -537,7 +537,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
         rgba(97, 166, 171, 1) 66%
     );
 }
-
 
 .homeServices a {
     padding: 0 1rem;
@@ -625,12 +624,11 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     gap: 1rem;
 }
 
-#highlightIcon{
-    padding:0;
-    
+#highlightIcon {
+    padding: 0;
 }
 
-#highlightIcon i{
+#highlightIcon i {
     font-size: 3.5rem;
 }
 
@@ -652,15 +650,14 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     list-style: none;
 }
 
-.pgLinks a{
+.pgLinks a {
     color: #f6f6e9;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     background: none;
 }
 
-
-.pgLinks a:hover{
-    color:#61a6ab;
+.pgLinks a:hover {
+    color: #61a6ab;
 }
 
 .fineprint {
@@ -732,7 +729,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     padding: 0.5rem 2.5rem;
 }
 
-.service .instincdev{
+.service .instincdev {
     font-size: 4rem;
 }
 
@@ -745,16 +742,14 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     font-size: 3rem;
 }
 
-
-.service li{
+.service li {
     margin: 0;
-    padding: 0 4rem .5rem 5rem;
+    padding: 0 4rem 0.5rem 5rem;
     list-style: none;
     background-image: url(../assets/5.png);
     background-repeat: no-repeat;
     background-position: -2rem -2rem;
     background-size: 9rem;
-
 }
 .service a {
     text-align: center;
@@ -820,7 +815,8 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 /*************************************/
 
 .formContain {
-    width: 75%;
+    width: 85%;
+    min-width: 380px;
     background: #130413aa;
     margin: 7rem;
 }
@@ -831,36 +827,38 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    border-bottom: 0.2rem solid #02d7df;
-    background: #f6f6e9;
+    border-bottom: 0.2rem solid #f6f6e9;
+    background: #61a6ab;
 }
 
 .contactHead h3 {
-    font-size: 4rem;
+    padding: 0 1.5rem;
+    font-size: 3rem;
+    background: #130413;
 }
 
 .contactHead p {
     margin: 0;
     padding: 0;
-    color: #02d7df;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .contactHead ul {
     display: flex;
     margin: 0;
     padding: 0;
-    font-size: 3rem;
+    font-size: 1.9rem;
     list-style: none;
 }
 
 .contactHead li {
     padding: 0 0.5rem;
+    color: #f6f6e9;
 }
 
 .contactHead span {
-    color: #02d7df;
-    font-size: 2.5rem;
+    color: #f6f6e9;
+    font-size: 1.5rem;
 }
 
 .contactForm {
@@ -894,14 +892,16 @@ label {
     color: #130413;
 }
 
-#floatingName, #floatingEmail, #floatingTextarea{
+#floatingName,
+#floatingEmail,
+#floatingTextarea {
     padding: 3.2rem 2rem;
     padding-bottom: 1.2rem;
     color: #130413;
     font-size: 2rem;
 }
 
-form .contact_btn{
+form .contact_btn {
     align-self: center;
     margin: 1.5rem 0;
     padding: 0 1rem;
@@ -914,7 +914,6 @@ form .contact_btn{
         rgba(2, 215, 223, 0.5931159546656638) 26%,
         rgba(97, 166, 171, 1) 66%
     );
-    
 }
 
 form .contact_btn:active {
@@ -925,7 +924,6 @@ form .contact_btn:active {
     );
 }
 
-
 /*************************************/
 /** 404 Page **/
 /*************************************/
@@ -934,19 +932,16 @@ form .contact_btn:active {
 /** Media Queries **/
 /*************************************/
 
-
-
 @media all and (max-width: 1047px) {
-
     /* Nav */
     .logo {
-       width: 15%;
+        width: 15%;
         min-width: 80px;
     }
 
     header h3 {
         margin-right: 15rem;
-    font-size: 5rem;
+        font-size: 5rem;
     }
 
     .navBar {
@@ -954,111 +949,106 @@ form .contact_btn:active {
         gap: 2rem;
     }
 
-  /*   About Page */
- #about {
-    height: 120%;
+    /*   About Page */
+    #about {
+        height: 120%;
+    }
 
+    .aboutTxt {
+        width: 80%;
+        margin: 0 auto 4rem;
+    }
+
+    .aboutTxt .contact_btn {
+        align-self: center;
+        margin: 1.5rem 0;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        background: linear-gradient(
+            162deg,
+            rgba(2, 215, 223, 0.5931159546656638) 26%,
+            rgba(97, 166, 171, 1) 66%
+        );
+    }
+
+    .aboutTxt .contact_btn:active {
+        background: linear-gradient(
+            162deg,
+            rgba(97, 166, 171, 1) 26%,
+            rgba(2, 215, 223, 0.5931159546656638) 66%
+        );
+    }
+
+    .homeService {
+        width: 80%;
+        min-width: 235px;
+        gap: 1.5rem;
+    }
+
+    .homeService a {
+        padding: 0 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    /** Banner **/
+
+    #banner {
+        top: 3%;
+        height: 33%;
+        max-height: 400px;
+        background: url("../assets/skyline2.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #bannerTint {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        background: url("../assets/close_up_code.png") no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
+
+    .bannerContent {
+        position: absolute;
+        top: 7.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+        /* max-width: 1211px; */
+        z-index: 2;
+    }
+
+    .bannerImg {
+        display: flex;
+        width: 12%;
+        min-width: 104px;
+        min-height: 150px;
+    }
+
+    .bannerH1 {
+        align-self: center;
+        padding: 1rem 1.5rem;
+        color: #f6f6e9;
+        font-size: 2rem;
+        font-weight: 400;
+        border-radius: 5rem;
+        background: rgba(41, 27, 37, 0.3);
+    }
+
+    .bannerImg img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .col-6 {
+        width: 90%;
+    }
 }
 
-.aboutTxt{
-    width: 80%;
-    margin: 0 auto 4rem; 
-}
-
-
-.aboutTxt .contact_btn {
-    align-self: center;
-    margin: 1.5rem 0;
-    padding: 0 1rem;
-    border-radius: 1rem;
-    background: linear-gradient(
-        162deg,
-        rgba(2, 215, 223, 0.5931159546656638) 26%,
-        rgba(97, 166, 171, 1) 66%
-    );
-}
-
-.aboutTxt .contact_btn:active {
-    background: linear-gradient(
-        162deg,
-        rgba(97, 166, 171, 1) 26%,
-        rgba(2, 215, 223, 0.5931159546656638) 66%
-    );
-}
-
-
-
-.homeService {
-    width: 80%;
-    min-width: 235px;
-    gap: 1.5rem;
-}
-
-.homeService a{
-    padding: 0 0.5rem;
-    font-size: 2.5rem;
-}
-
-/** Banner **/
-
-#banner {
-    top:3%;
-    height: 33%;
-    max-height: 400px;
-    background: url("../assets/skyline2.jpg") no-repeat;
-    background-size: cover;
-}
-
-#bannerTint {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background: url("../assets/close_up_code.png") no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bannerContent {
-    position: absolute;
-    top: 7.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 auto;
-    /* max-width: 1211px; */
-    z-index: 2;
-}
-
-.bannerImg {
-    display: flex;
-    width: 12%;
-    min-width: 104px;
-    min-height: 150px;
-}
-
-.bannerH1 {
-    align-self: center;
-    padding: 1rem 1.5rem;
-    color: #f6f6e9;
-    font-size: 2rem;
-    font-weight: 400;
-    border-radius: 5rem;
-    background: rgba(41, 27, 37, 0.3);
-}
-
-.bannerImg img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.col-6{
-  width: 90%;
-}
-
-}
-
-@media all and (min-width:1048px) {
+@media all and (min-width: 1048px) {
     #mobileNav {
         display: none;
     }
@@ -1082,98 +1072,115 @@ form .contact_btn:active {
     }
 
     /*  About Page */
-#about {
-    height: 200%;
+    #about {
+        height: 200%;
+    }
 
-}
+    .aboutTxt {
+        width: 80%;
+        margin: 0 auto 4rem;
+    }
+    .aboutTxt .contact_btn {
+        align-self: center;
+        margin: 1.5rem 0;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        background: linear-gradient(
+            162deg,
+            rgba(2, 215, 223, 0.5931159546656638) 26%,
+            rgba(97, 166, 171, 1) 66%
+        );
+    }
 
-.aboutTxt{
-    width: 80%;
-    margin: 0 auto 4rem; 
+    .aboutTxt .contact_btn:active {
+        background: linear-gradient(
+            162deg,
+            rgba(97, 166, 171, 1) 26%,
+            rgba(2, 215, 223, 0.5931159546656638) 66%
+        );
+    }
 
-}
-.aboutTxt .contact_btn {
-    align-self: center;
-    margin: 1.5rem 0;
-    padding: 0 1rem;
-    border-radius: 1rem;
-    background: linear-gradient(
-        162deg,
-        rgba(2, 215, 223, 0.5931159546656638) 26%,
-        rgba(97, 166, 171, 1) 66%
-    );
-}
+    .homeServices {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
 
-.aboutTxt .contact_btn:active {
-    background: linear-gradient(
-        162deg,
-        rgba(97, 166, 171, 1) 26%,
-        rgba(2, 215, 223, 0.5931159546656638) 66%
-    );
-}
+    .homeService {
+        width: 35%;
+        gap: 1.5rem;
+    }
 
-.homeServices {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
+    /** Banner **/
 
-.homeService {
-    width: 35%;
-    gap: 1.5rem;
-}
+    #banner {
+        top: 1rem;
+        height: 33%;
+        background: url("../assets/skyline2.jpg") no-repeat;
+        background-size: cover;
+    }
 
-/** Banner **/
+    #bannerTint {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        background: url("../assets/close_up_code.png") no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
 
-#banner {
-    top:1rem;
-    height: 33%;
-    background: url("../assets/skyline2.jpg") no-repeat;
-    background-size: cover;
-}
+    .bannerContent {
+        position: absolute;
+        top: 6.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+        /* max-width: 1211px; */
+        z-index: 2;
+    }
 
-#bannerTint {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background: url("../assets/close_up_code.png") no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
+    .bannerImg {
+        display: flex;
+        width: 12%;
+        max-width: 145px;
+        min-height: 150px;
+    }
 
+    .bannerH1 {
+        align-self: center;
+        padding: 1.5rem;
+        color: #f6f6e9;
+        font-size: 2.2rem;
+        font-weight: 400;
+        border-radius: 5rem;
+        background: rgba(41, 27, 37, 0.3);
+    }
 
+    .bannerImg img {
+        width: 100%;
+        border-radius: 50%;
+    }
 
-.bannerContent {
-    position: absolute;
-    top: 6.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 auto;
-    /* max-width: 1211px; */
-    z-index: 2;
-}
+    .formContain {
+        width: 80%;
+        max-width: 730px;
+    }
 
-.bannerImg {
-    display: flex;
-    width: 12%;
-    max-width: 145px;
-    min-height: 150px;
-}
+    .contactHead h3 {
+        font-size: 4rem;
+    }
 
-.bannerH1 {
-    align-self: center;
-    padding: 1.5rem;
-    color: #f6f6e9;
-    font-size: 2.2rem;
-    font-weight: 400;
-    border-radius: 5rem;
-    background: rgba(41, 27, 37, 0.3);
-}
+    .contactHead p {
+        font-size: 2.5rem;
+    }
 
-.bannerImg img {
-    width: 100%;
-    border-radius: 50%;
-}
+    .contactHead ul {
+        font-size: 3rem;
+    }
+
+    .contactHead span {
+        font-size: 2.5rem;
+    }
 }

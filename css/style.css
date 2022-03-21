@@ -872,6 +872,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 #floatingTextarea {
     height: 20rem;
+    padding-bottom: 1rem;
 }
 .formControl {
     display: flex;
@@ -922,6 +923,10 @@ form .contact_btn:active {
         rgba(97, 166, 171, 1) 26%,
         rgba(2, 215, 223, 0.5931159546656638) 66%
     );
+}
+
+.recaptcha{
+    padding: 1rem;
 }
 
 /*************************************/

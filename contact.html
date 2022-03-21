@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta
             name="description"
-            content=" We will create a website that will showcase your business, menue, resume, and much more. Proudly serving Escambia, Santa Rosa, Okaloosa, and Walton Counties. Experience InstincDev Development and Design."
+            content=" InstincDev will create a website that will showcase your business, menue, resume, and much more. Proudly serving Escambia, Santa Rosa, Okaloosa, Walton counties and beyond. Experience InstincDev Development and Design."
         />
         <meta
             name="keywords"
@@ -131,7 +131,7 @@
             <section class="bannerContent">
                 <h1 class="bannerH1">
                     "I create customized proposal pacakges to meet your unique
-                    busineses needs."
+                    business needs."
                 </h1>
                 <div class="bannerImg">
                     <img src="./assets/me.jpg" alt="image of InstincDev" />
@@ -171,7 +171,7 @@
                                 async
                             ></script>
                             <a
-                                href=""
+                                href="#"
                                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'});return false;"
                                 ><i class="fas fa-video"></i
                             ></a>
@@ -195,8 +195,16 @@
                     class="contactForm"
                     name="contact"
                     method="POST"
+                    data-netlify-recaptcha="true"
+                    netlify-honeypot="bot-field"
                     data-netlify="true"
                 >
+                <div class="hidden">
+                    <label>
+                        This NOT for human consuption 
+                        <input name="bot-field"/>
+                    </label>
+                </div>
                     <div class="visitorInfo col-12 m-4">
                         <div class="col-6">
                             <div class="form-floating">
@@ -204,6 +212,7 @@
                                     type="text"
                                     class="form-control"
                                     id="floatingName"
+                                    name="name"
                                     placeholder="Full Name"
                                 />
                                 <label for="floatingName">Full Name</label>
@@ -215,7 +224,7 @@
                                     type="email"
                                     class="form-control"
                                     id="floatingEmail"
-                                    id="floatingEmail"
+                                    name="email"
                                     placeholder="Email"
                                 />
                                 <label for="floatingEmail">Email</label>
@@ -228,9 +237,12 @@
                             <textarea
                                 class="form-control"
                                 id="floatingTextarea"
+                                name="message"
+                                placeholder="Comments"
                             ></textarea>
                             <label for="floatingTextarea">Comments</label>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                     </div>
                     <input class="contact_btn" type="submit" value="Submit">
                 </form>

@@ -145,7 +145,7 @@ footer {
 
 /*  About Page */
 #about {
-    height: 180%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -169,7 +169,7 @@ footer {
     align-items: center;
     width: 80%;
     min-width: 450px;
-    margin: 10% auto 15%;
+    margin: 10% auto 1rem;
     background: #130413cc;
 }
 
@@ -464,6 +464,10 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 /* About Me */
 
+.scroller{
+    height: 90%;
+}
+
 .aboutTxt h2 {
     margin-bottom: 1rem;
     font-size: 5rem;
@@ -510,7 +514,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 6rem 4rem;
+    margin: 6rem 4rem 40%;
     gap: 2rem;
 }
 
@@ -929,13 +933,22 @@ form .contact_btn:active {
     padding: 1rem;
 }
 
-/*************************************/
-/** 404 Page **/
-/*************************************/
 
 /*************************************/
 /** Media Queries **/
 /*************************************/
+
+@media all and (max-width: 900px){
+    #about{
+        height: 90%;
+
+    }
+
+    .aboutTxt{
+        font-size: 2.5rem;
+    }
+}
+
 
 @media all and (max-width: 1047px) {
     /* Nav */
@@ -955,9 +968,10 @@ form .contact_btn:active {
     }
 
     /*   About Page */
-    #about {
-        height: 120%;
-    }
+    /* .scroller {
+        height: 90%;
+        margin-bottom: 2rem;
+    } */
 
     .aboutTxt {
         width: 80%;
@@ -1077,9 +1091,10 @@ form .contact_btn:active {
     }
 
     /*  About Page */
-    #about {
-        height: 200%;
-    }
+
+    /* .scroller{
+        height: 90%;
+    } */
 
     .aboutTxt {
         width: 80%;

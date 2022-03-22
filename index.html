@@ -51,30 +51,32 @@
 
                 <nav>
                     <ul class="navBar">
-                        <a href="index.html" id="showHome">
-                            <i class="fas fa-home"></i>
-                            <li id="navHome" class="hidden word">Home</li>
-                        </a>
-                        <a href="index.html#about" id="showAbout">
-                            <i class="fas fa-user"></i>
-                            <li id="navAbout" class="hidden word">About</li>
-                        </a>
-                        <a href="services.html" id="showServices">
-                            <i class="fas fa-laptop-code"></i>
-                            <li id="navServices" class="hidden word">
+                        <li id="navHome">
+                            <a href="index.html" id="showHome"> Home </a>
+                        </li>
+
+                        <li id="navAbout">
+                            <a href="index.html#about" id="showAbout">
+                                About
+                            </a>
+                        </li>
+                        <li id="navServices">
+                            <a href="services.html" id="showServices">
                                 Services
-                            </li>
-                        </a>
-                        <!-- <a href="projects.html" id="showProjects">
-                            <i class="fas fa-code-branch"></i>
-                            <li id="navProjects" class="hidden word">
+                            </a>
+                        </li>
+
+                        <!-- <li id="navProjects" >
+                             <a href="projects.html" id="showProjects">
                                 Projects
-                            </li>
-                        </a> -->
-                        <a href="contact.html" id="showContact">
-                            <i class="far fa-address-card"></i>
-                            <li id="navContact" class="hidden word">Contact</li>
-                        </a>
+                             </a>
+                         </li> -->
+
+                        <li id="navContact">
+                            <a href="contact.html" id="showContact">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -100,26 +102,36 @@
 
                 <div id="mobileMenu">
                     <ul class="mobileMenuInner">
-                        <a href="index.html" class="mobileNavLink">
-                            <i class="fas fa-home"></i>
-                            <li>Home</li>
-                        </a>
-                        <a href="index.html#about" class="mobileNavLink">
-                            <i class="fas fa-user"></i>
-                            <li>About</li>
-                        </a>
-                        <a href="services.html" class="mobileNavLink">
-                            <i class="fas fa-laptop-code"></i>
-                            <li>Services</li>
-                        </a>
-                        <!-- <a href="projects.html" class="mobileNavLink">
-                            <i class="fas fa-code-branch"></i>
-                            <li>Projects</li>
-                        </a> -->
-                        <a href="contact.html" class="mobileNavLink">
-                            <i class="far fa-address-card"></i>
-                            <li>Contact</li>
-                        </a>
+                        <li>
+                            <a href="index.html" class="mobileNavLink">
+                                <i class="fas fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#about" class="mobileNavLink">
+                                <i class="fas fa-user"></i>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="mobileNavLink">
+                                <i class="fas fa-laptop-code"></i>
+                                Services
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="projects.html" class="mobileNavLink">
+                                <i class="fas fa-code-branch"></i> 
+                                Projects
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="contact.html" class="mobileNavLink">
+                                <i class="far fa-address-card"></i>
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -255,48 +267,62 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer>
-            <section class="footerLinks">
-                    <ul class="pgLinks">
-                        <a href="services.html"><li>Services</li></a>
-                        <a href="index.html#about"><li>About</li></a>
-                        <a href="contact.html"><li>Contact</li></a>
-                    </ul>
-            </section>
-            <section class="fineprint copy">
-                <img src="./assets/5.png" alt="instincdev lotus flower logo" />
-                <small class="legals"
-                    >&copy 2022 All Rignts Reserved
-                    <a href="/index.html#home">InstincDev</a></small
+<!-- Footer -->
+<footer>
+    <section class="footerLinks">
+        <ul class="pgLinks">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+    <section class="fineprint copy">
+        <img src="./assets/5.png" alt="instincdev lotus flower logo" />
+        <small class="legals"
+            >&copy 2022 All Rignts Reserved
+            <a href="/index.html#home">InstincDev</a></small
+        >
+    </section>
+    <section class="fineprint">
+        <ul class="socials footerIcon">
+            <li>
+                <a
+                    title="Twitter"
+                    href="https://twitter.com/instincdev"
+                    target="_blank"
                 >
-            </section>
-            <section class="fineprint">
-                <ul class="socials footerIcon">
-                    <a
-                        title="Twitter"
-                        href="https://twitter.com/instincdev"
-                        target="_blank"
-                        ><li><i class="fab fa-twitter"></i></li
-                    ></a>
-                    <a
-                        title="LinkedIn"
-                        href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
-                        target="_blank"
-                        ><li><i class="fab fa-linkedin-in"></i></li
-                    ></a>
-                    <a
-                        title="GitHub"
-                        href="https://github.com/InstincDev"
-                        target="_blank"
-                        ><li><i class="fab fa-github-alt"></i></li
-                    ></a>
-                    <a title="Contact" href="contact.html"
-                        ><li><i class="fas fa-envelope"></i></li
-                    ></a>
-                </ul>
-            </section>
-        </footer>
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a
+                    title="LinkedIn"
+                    href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
+                    target="_blank"
+                >
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+
+            <li>
+                <a
+                    title="GitHub"
+                    href="https://github.com/InstincDev"
+                    target="_blank"
+                >
+                    <i class="fab fa-github-alt"></i>
+                </a>
+            </li>
+
+            <li>
+                <a title="Contact" href="contact.html">
+                    <i class="fas fa-envelope"> </i
+                ></a>
+            </li>
+        </ul>
+    </section>
+</footer>
 
         <script type="text/javascript" src="js/main.js"></script>
     </body>

@@ -69,6 +69,9 @@ a {
     background: #61a6ab;
     cursor: pointer;
 }
+ul{
+    margin: 0;
+}
 
 .instincdev {
     color: #02d7df;
@@ -95,8 +98,6 @@ header {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -628,20 +629,11 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 /* Footer */
 
-.footerList {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.footerLinks h5 {
-    font-size: 2rem;
-}
-
-.footerLinks ul {
+.pgLinks, .footerIcon  {
     padding: 0;
-    display: flex;
-    margin-bottom: none;
+    display: flex;;
     font-size: 1.5rem;
+    font-weight:400;
     list-style: none;
 }
 
@@ -653,10 +645,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .pgLinks a:hover {
     color: #61a6ab;
-}
-
-.fineprint {
-    display: flex;
 }
 
 .copy {
@@ -686,10 +674,10 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 
 .socials a {
+    padding: 0 0.5rem;
     background: 0;
 }
 .socials i {
-    padding-top: 1rem;
     font-size: 1.5rem;
     color: #02d7df;
 }
@@ -930,10 +918,6 @@ form .contact_btn:active {
 /*************************************/
 
 @media all and (max-width: 900px){
-    #about{
-        height: 90%;
-
-    }
 
     .aboutTxt{
         font-size: 2.5rem;
@@ -943,10 +927,10 @@ form .contact_btn:active {
 
 @media all and (max-width: 1047px) {
     /* Nav */
-    .logo {
-        width: 15%;
+    /* .logo {
+        width: 115%;
         min-width: 80px;
-    }
+    } */
 
     header h3 {
         margin-right: 15rem;
@@ -957,12 +941,6 @@ form .contact_btn:active {
         background: 0;
         gap: 2rem;
     }
-
-    /*   About Page */
-    /* .scroller {
-        height: 90%;
-        margin-bottom: 2rem;
-    } */
 
     .aboutTxt {
         width: 80%;
@@ -1067,10 +1045,10 @@ form .contact_btn:active {
     }
 
     /* Nav */
-    .logo {
+    /* .logo {
         max-width: 150px;
-        height: 150%;
-    }
+        height: 100%;
+    } */
 
     header h3 {
         font-size: 5.5rem;
@@ -1082,10 +1060,6 @@ form .contact_btn:active {
     }
 
     /*  About Page */
-
-    /* .scroller{
-        height: 90%;
-    } */
 
     .aboutTxt {
         width: 80%;

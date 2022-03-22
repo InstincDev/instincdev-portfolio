@@ -51,20 +51,22 @@
 
                 <nav>
                     <ul class="navBar">
-                        <a href="index.html" id="showHome">
-                            <i class="fas fa-home"></i>
-                            <li id="navHome" class="hidden word">Home</li>
+                       <li id="navHome">
+                           <a href="index.html" id="showHome">
+                            Home
+                           </a>
+                    </li>
+
+                      <li id="navAbout" >About</li>  <a href="index.html#about" id="showAbout">
+                            
                         </a>
-                        <a href="index.html#about" id="showAbout">
-                            <i class="fas fa-user"></i>
-                            <li id="navAbout" class="hidden word">About</li>
-                        </a>
-                        <a href="services.html" id="showServices">
-                            <i class="fas fa-laptop-code"></i>
-                            <li id="navServices" class="hidden word">
+
+                        <li id="navServices" ></li><a href="services.html" id="showServices">
+                            
                                 Services
-                            </li>
-                        </a>
+                           
+                        </li>
+                     </a>
                         <!-- <a href="projects.html" id="showProjects">
                          <i class="fas fa-code-branch"></i> 
                             <li id="navProjects" class="hidden word">
@@ -199,12 +201,12 @@
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                 >
-                <div class="hidden">
-                    <label>
-                        This NOT for human consuption 
-                        <input name="bot-field"/>
-                    </label>
-                </div>
+                    <div class="hidden">
+                        <label>
+                            This NOT for human consuption
+                            <input name="bot-field" />
+                        </label>
+                    </div>
                     <div class="visitorInfo col-12 m-4">
                         <div class="col-6">
                             <div class="form-floating">
@@ -242,9 +244,12 @@
                             ></textarea>
                             <label for="floatingTextarea">Comments</label>
                         </div>
-                        <div data-netlify-recaptcha="true" class="recaptcha"></div>
+                        <div
+                            data-netlify-recaptcha="true"
+                            class="recaptcha"
+                        ></div>
                     </div>
-                    <input class="contact_btn" type="submit" value="Submit">
+                    <input class="contact_btn" type="submit" value="Submit" />
                 </form>
             </div>
         </section>
@@ -252,17 +257,11 @@
         <!-- Footer -->
         <footer>
             <section class="footerLinks">
-                <h5>Quick Links</h5>
-                <div class="footerList">
-                    <!-- <ul class="pgLinks">
-                        <a href="projects.html"><li>Portfolio</li></a>
-                    </ul> -->
-                    <ul class="pgLinks">
-                        <a href="services.html"><li>Services</li></a>
-                        <a href="index.html#about"><li>About</li></a>
-                        <a href="contact.html"><li>Contact</li></a>
-                    </ul>
-                </div>
+                <ul class="pgLinks">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="index.html#about"><li>About</li></a>
+                </ul>
             </section>
             <section class="fineprint copy">
                 <img src="./assets/5.png" alt="instincdev lotus flower logo" />
@@ -273,27 +272,41 @@
             </section>
             <section class="fineprint">
                 <ul class="socials footerIcon">
-                    <a
-                        title="Twitter"
-                        href="https://twitter.com/instincdev"
-                        target="_blank"
-                        ><li><i class="fab fa-twitter"></i></li
-                    ></a>
-                    <a
-                        title="LinkedIn"
-                        href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
-                        target="_blank"
-                        ><li><i class="fab fa-linkedin-in"></i></li
-                    ></a>
-                    <a
-                        title="GitHub"
-                        href="https://github.com/InstincDev"
-                        target="_blank"
-                        ><li><i class="fab fa-github-alt"></i></li
-                    ></a>
-                    <a title="Contact" href="contact.html"
-                        ><li><i class="fas fa-envelope"></i></li
-                    ></a>
+                    <li>
+                        <a
+                            title="Twitter"
+                            href="https://twitter.com/instincdev"
+                            target="_blank"
+                        >
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            title="LinkedIn"
+                            href="https://www.linkedin.com/in/chanel-timberlake-856b3414a/"
+                            target="_blank"
+                        >
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            title="GitHub"
+                            href="https://github.com/InstincDev"
+                            target="_blank"
+                        >
+                            <i class="fab fa-github-alt"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a title="Contact" href="contact.html">
+                            <i class="fas fa-envelope"> </i
+                        ></a>
+                    </li>
                 </ul>
             </section>
         </footer>

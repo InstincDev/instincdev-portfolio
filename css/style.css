@@ -227,11 +227,14 @@ footer {
 
 /* Nav */
 .logo {
-    width: 100%;
+    width: 30%;
     background: 0;
 }
 
 .logo img {
+    width: 40%;
+    max-width: 142px;
+    min-width: 57px;
     height: 100%;
 }
 
@@ -303,6 +306,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 2.5rem 2.5rem 0;
 }
@@ -387,9 +391,10 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .word {
     font-size: 2rem;
+    
 }
 
-.letter {
+.letter:hover {
     display: inline-block;
     position: relative;
     transform: translateZ(15px);
@@ -407,7 +412,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .letter.in {
     transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.32s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Home */
@@ -449,7 +454,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     margin-top: 1.5rem;
     padding: 0 1rem;
     font-size: 3.5rem;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     background: linear-gradient(
         162deg,
         rgba(2, 215, 223, 0.5931159546656638) 26%,
@@ -471,7 +476,9 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 .aboutTxt {
     display: flex;
     flex-direction: column;
-    margin: 0 4rem 4rem;
+justify-content: center;
+align-items: center;
+margin: 9rem auto 0;
     padding: 3rem 6rem;
     font-size: 3.5rem;
     background: #130413cc;
@@ -488,7 +495,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     align-self: center;
     margin: 1.5rem 0;
     padding: 0 1rem;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     background: linear-gradient(
         162deg,
         rgba(2, 215, 223, 0.5931159546656638) 26%,
@@ -509,7 +516,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 6rem 4rem 40%;
+    margin:  0 4rem 6rem;
     gap: 2rem;
 }
 
@@ -520,7 +527,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5rem;
+    padding: 3rem 1rem;
     background: #130413cc;
     box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
@@ -540,7 +547,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 .homeServices a {
     padding: 0.5rem 1.75rem;
     font-size: 2.5rem;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     background: linear-gradient(
         162deg,
         rgba(2, 215, 223, 0.5931159546656638) 26%,
@@ -819,8 +826,8 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 
 .contactHead h3 {
-    padding: 0 1.5rem;
-    font-size: 3rem;
+    padding: 1rem 3rem;
+    font-size: 4rem;
     background: #130413;
 }
 
@@ -892,11 +899,11 @@ label {
 form .contact_btn {
     align-self: center;
     margin: 1.5rem 0;
-    padding: 0 1rem;
+    padding: 0.5rem 1.75rem;
     color: #f6f6e9;
     font-size: 2.5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     background: linear-gradient(
         162deg,
         rgba(2, 215, 223, 0.5931159546656638) 26%,
@@ -948,14 +955,12 @@ form .contact_btn:active {
 
     .aboutTxt {
         width: 80%;
-        margin: 0 auto 4rem;
     }
 
     .aboutTxt .contact_btn {
         align-self: center;
-        margin: 1.5rem 0;
         padding: 0 1rem;
-        border-radius: 1rem;
+        border-radius: 0.25rem;
         background: linear-gradient(
             162deg,
             rgba(2, 215, 223, 0.5931159546656638) 26%,
@@ -1067,13 +1072,13 @@ form .contact_btn:active {
 
     .aboutTxt {
         width: 80%;
-        margin: 0 auto 4rem;
     }
+    
     .aboutTxt .contact_btn {
         align-self: center;
         margin: 1.5rem 0;
         padding: 0 1rem;
-        border-radius: 1rem;
+        border-radius: 0.25rem;
         background: linear-gradient(
             162deg,
             rgba(2, 215, 223, 0.5931159546656638) 26%,

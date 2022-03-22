@@ -1,87 +1,92 @@
 
-document.getElementById('about').addEventListener("resize", checkSize)
+// document.getElementById('about').addEventListener("resize", checkSize)
 
-function checkSize(event){
+// function checkSize(event){
  
-  if(document.getElementById("about").style.width >= '1046px'){
- event.preventDefault();
-    document.querySelector(".scroller").classList.toggle('reveal');
-  }
-}
+//   if(document.getElementById("about").style.width >= '1046px'){
+//  event.preventDefault();
+//     document.querySelector(".scroller").classList.toggle('reveal');
+//   }
+// }
 
 
 
 
 
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
+// function reveal() {
+//     var reveals = document.querySelectorAll(".reveal");
+//     for (var i = 0; i < reveals.length; i++) {
+//       var windowHeight = window.innerHeight;
+//       var elementTop = reveals[i].getBoundingClientRect().top;
+//       var elementVisible = 150;
+//       if (elementTop < windowHeight - elementVisible) {
+//         reveals[i].classList.add("active");
+//       } else {
+//         reveals[i].classList.remove("active");
+//       }
+//     }
+//   }
 
-  window.addEventListener("scroll", reveal);
+//   window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
-reveal();
+// // To check the scroll position on page load
+// reveal();
 
-/*Navigation Animation */
-// inspired by Rotating text codepen by Rachel Smith https://codepen.io/rachsmith/pen/BNKJme
+// /*Navigation Animation */
+// // inspired by Rotating text codepen by Rachel Smith https://codepen.io/rachsmith/pen/BNKJme
 
-const home = document.getElementById('navHome');
-const about = document.getElementById('navAbout');
-const service = document.getElementById('navServices');
-const projects = document.getElementById('navProjects');
-const contact = document.getElementById('navContact');
+// const home = document.getElementById('navHome');
+// const about = document.getElementById('navAbout');
+// const service = document.getElementById('navServices');
+// const projects = document.getElementById('navProjects');
+// const contact = document.getElementById('navContact');
 
-// Show Home
-document.getElementById('showHome').addEventListener('mouseenter',showHome )
-document.getElementById('showHome').addEventListener('mouseleave',showHome )
+// // Show Home
+// document.getElementById('showHome').addEventListener('mouseenter',showHome )
+// document.getElementById('showHome').addEventListener('mouseleave',showHome )
 
-function showHome(){
-    home.classList.toggle("hidden")
-}
+// function showHome(){
+//     home.classList.toggle("hidden")
+// }
 
-// Show About
-document.getElementById('showAbout').addEventListener('mouseenter',showAbout )
-document.getElementById('showAbout').addEventListener('mouseleave',showAbout )
+// // Show About
+// document.getElementById('showAbout').addEventListener('mouseenter',showAbout )
+// document.getElementById('showAbout').addEventListener('mouseleave',showAbout )
 
-function showAbout(){
-    about.classList.toggle("hidden")
-}
+// function showAbout(){
+//     about.classList.toggle("hidden")
+// }
 
-// Show Services
-document.getElementById('showServices').addEventListener('mouseenter',showServices )
-document.getElementById('showServices').addEventListener('mouseleave',showServices )
+// // Show Services
+// document.getElementById('showServices').addEventListener('mouseenter',showServices )
+// document.getElementById('showServices').addEventListener('mouseleave',showServices )
 
-function showServices(){
-    service.classList.toggle("hidden")
-}
+// function showServices(){
+//     service.classList.toggle("hidden")
+// }
 
-// Show Projects
-document.getElementById('showProjects').addEventListener('mouseenter',showProjects )
-document.getElementById('showProjects').addEventListener('mouseleave',showProjects )
+// // Show Projects
+// document.getElementById('showProjects').addEventListener('mouseenter',showProjects )
+// document.getElementById('showProjects').addEventListener('mouseleave',showProjects )
 
-function showProjects(){
-    projects.classList.toggle("hidden")
-}
+// function showProjects(){
+//     projects.classList.toggle("hidden")
+// }
 
-// Show Contact
-document.getElementById('showContact').addEventListener('mouseenter',showContact )
-document.getElementById('showContact').addEventListener('mouseleave',showContact )
+// // Show Contact
+// document.getElementById('showContact').addEventListener('mouseenter',showContact )
+// document.getElementById('showContact').addEventListener('mouseleave',showContact )
 
-function showContact(){
-    contact.classList.toggle("hidden")
-}
+// function showContact(){
+//     contact.classList.toggle("hidden")
+// }
 
-var words = document.getElementsByClassName('word');
+// const home = document.getElementById('navHome');
+// home.addEventListener('mouseover',moveWord);
+// home.addEventListener('mouseleave',moveWord);
+
+
+var words = document.getElementsByClassName('word')
 var wordArray = [];
 var currentWord = 0;
 
@@ -115,7 +120,7 @@ cw[i].className = 'letter out';
 function animateLetterIn(nw, i) {
   setTimeout(function() {
 nw[i].className = 'letter in';
-  }, 340+(i*80));
+  }, 340+(i*50));
 }
 
 function splitLetters(word) {
@@ -134,4 +139,4 @@ function splitLetters(word) {
 }
 
 changeWord();
-setInterval(changeWord, 820);
+setInterval(changeWord, 3000);

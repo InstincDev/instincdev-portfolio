@@ -588,7 +588,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     color: #f6f6e9;
     font-size: 3.5rem;
     font-weight: 400;
-    border-radius: .35rem;
+    border-radius: .75rem;
     background: #02d7df45;
 }
 
@@ -1188,9 +1188,7 @@ form .contact_btn:active {
         padding: 1.5rem;
         color: #f6f6e9;
         font-size: 2.2rem;
-        font-weight: 400;
-        border-radius: 5rem;
-        
+        font-weight: 400;  
     }
 
     .bannerImg img {

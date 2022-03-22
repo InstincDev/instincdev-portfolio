@@ -200,6 +200,10 @@ footer {
     list-style-type: none;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Scroll Effect */
 .reveal {
     position: relative;

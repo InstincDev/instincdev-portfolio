@@ -294,8 +294,7 @@ nav {
 
 .hamburgerToggle {
     position: absolute;
-    height: 5rem;
-    max-height: 20px;
+    height: 6rem;
     width: 4rem;
     right: 0;
     margin: 6.5rem;

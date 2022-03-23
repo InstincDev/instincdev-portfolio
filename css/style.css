@@ -102,7 +102,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 1rem 2rem;
+    padding: 3rem 2.5rem;
     background: #130413ee;
 }
 
@@ -279,7 +279,6 @@ nav {
     right: 0;
     top: 95%;
     width: 15rem;
-    margin-top: 1rem;
     transform: translateX(250px);
     transition: transform 250ms ease-in-out;
     background: linear-gradient(
@@ -294,10 +293,10 @@ nav {
 
 .hamburgerToggle {
     position: absolute;
-    height: 6rem;
-    width: 4rem;
+    height: 3rem;
+    width: 2.8rem;
     right: 0;
-    margin: 6.5rem;
+    margin: 6rem;
     transition: all 0.3s;
     cursor: pointer;
     z-index: 99;

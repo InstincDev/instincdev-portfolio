@@ -731,19 +731,19 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 
 .service h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0.5rem;
     text-align: center;
     background: #130413;
 }
 
 .service p {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0.5rem 2.5rem;
 }
 
 .service .instincdev {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .service ul {
@@ -752,7 +752,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     justify-content: center;
     align-content: center;
     margin: 1rem 2.5rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .service li {
@@ -769,7 +769,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     padding: 0.5rem 1rem;
     text-align: center;
     color:#130413;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     border-top: 0.5rem solid #130413;
     background: linear-gradient(

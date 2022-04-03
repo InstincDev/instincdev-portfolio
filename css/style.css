@@ -834,7 +834,8 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     background: none;
 }
 .pjtTxt h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     padding: 0 1.5rem;
 }
 

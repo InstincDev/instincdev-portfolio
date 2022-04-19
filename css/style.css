@@ -597,7 +597,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     font-size: 3rem;
     font-weight: 400;
     border-radius: .75rem;
-    background: #02d7df45;
+    background: #61a6ab;
 }
 
 .bannerImg img {

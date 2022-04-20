@@ -553,11 +553,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 .icon {
     font-size: 4rem;
     width: 8rem;
-    background: linear-gradient(
-        162deg,
-        rgba(2, 215, 223, 0.5931159546656638) 26%,
-        rgba(97, 166, 171, 1) 66%
-    );
 }
 
 .homeServices a {

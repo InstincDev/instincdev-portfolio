@@ -558,6 +558,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 .homeServicesText p{
     font-weight: 500;
     color: #130413;
+    text-align: justify;
 }
 
 .homeServicesText p:last-of-type{

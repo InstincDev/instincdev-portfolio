@@ -536,7 +536,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     margin: 9rem auto 0;
     padding: 3rem 6rem;
     font-size: 2.5rem;
-    background: #f6f6e955;
+    background: #f6f6e999;
     box-shadow: 0px 0px 9px 1px rgba(168, 164, 164, 0.75);
     -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);

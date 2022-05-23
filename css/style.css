@@ -497,9 +497,15 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
+.aboutTxt p{
+    text-align: justify;
+    text-indent: 3rem;
+}
+
 #aboutSubHead{
+    text-indent: 0;
     margin-bottom: 2rem;
-    padding: 0.5rem 1.5rem;
+    padding: 1.5rem 4.3rem;
     background: #61a6ab;
 }
 
@@ -543,7 +549,7 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 }
 
 .homeServicesText h3{
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     color: #f6f6e9;
     font-size: 3rem;
     background: #61a6ab;

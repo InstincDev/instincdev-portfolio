@@ -789,6 +789,17 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     background: #130413;
 }
 
+.service div{
+    display: flex;
+   
+}
+
+.serviceCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .service p {
     font-size: 2rem;
     padding: 0.5rem 2.5rem;
@@ -803,7 +814,6 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 1rem 2.5rem;
     font-size: 2rem;
 }
 

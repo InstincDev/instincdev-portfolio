@@ -232,7 +232,9 @@ footer {
 
 /* Nav */
 .logo {
-    width: 25%;
+    /* border: solid red; */
+    display:flex;
+    width: 50%;
     background: 0;
 }
 
@@ -243,10 +245,11 @@ footer {
 }
 
 header h3 {
+    /* border: solid white; */
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    width: auto;
+    align-items: center;
+    /* flex-grow: 1; */
+    /* width: auto; */
 }
 
 nav {
@@ -254,7 +257,7 @@ nav {
     position: relative;
     width: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0;
 }
 
@@ -423,10 +426,10 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 
 .home {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
+    gap: 3rem;
 }
 
 .homeImg {
@@ -438,6 +441,10 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
 .home img {
     width: 100%;
     border-radius: 50%;
+}
+
+.homeTxt{
+    /* display:flex; */
 }
 
 .home h1 {
@@ -452,6 +459,13 @@ input[type="checkbox"]:checked ~ .hamburgerToggle > .diagonal.part-2 {
     font-weight: 300;
     font-style: italic;
     font-size: 3rem;
+}
+
+.homeBtns{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .home a {
@@ -1017,7 +1031,7 @@ form .contact_btn:active {
 @media all and (max-width: 1047px) {
     header h3 {
         margin-right: 20rem;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .navBar {
@@ -1151,7 +1165,7 @@ form .contact_btn:active {
     }
 
     header h3 {
-        font-size: 5.5rem;
+        font-size: 3.5rem;
     }
 
     .navBar {

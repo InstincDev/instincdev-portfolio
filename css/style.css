@@ -1079,9 +1079,16 @@ form .contact_btn:active {
     }
 
     .homeService {
-        
         min-width: 235px;
         gap: 1.5rem;
+    }
+
+    .homeService:first-of-type{
+        border-radius:  0 ;
+    }
+    
+    .homeService:last-of-type{
+        border-radius: 0 ;
     }
 
     .homeService a {

@@ -1070,6 +1070,15 @@ form .contact_btn:active {
         gap: 2rem;
     }
 
+    #about{
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .aboutImg, .aboutTxt{
+        width: 100%;
+    }
+
     .aboutTxt, .homeServicesText {
         width: 80%;
     }

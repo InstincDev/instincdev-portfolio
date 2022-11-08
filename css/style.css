@@ -193,13 +193,6 @@ nav {
     border-radius: 50%;
 }
 
-.homeTxt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-}
-
 .home h1 {
     margin-bottom: 2rem;
     color: #291b25;
@@ -213,7 +206,7 @@ nav {
     font-family: "Roboto Slab";
     font-weight: 400;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .home span{

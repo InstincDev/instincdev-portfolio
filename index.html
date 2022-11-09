@@ -148,11 +148,11 @@
                     </section>
                     <section class="service card-content row col s6 m6 l3">
                         <span class="col s12 m12 icon">
-                           </i><i class="fas fa-pen"></i>
+                           <i class="fas fa-pen"></i>
                         </span>
                         <span class="col s12 m12 ">
                             <a href="#updates">
-                                                                                    Updates
+                                                                                                                    Updates
                                                                                 </a>
                         </span>
                         
@@ -246,48 +246,44 @@
             </section>
         </section>
 <!-- Service Descriptions -->
-        <section class=" row">
+        <section class="service-collapsible">
             <h3>My Services</h3>
-                <div class="carousel carousel-slider center">
-                    <div class="service-slider carousel-fixed-item center">
-                        <a class="btn waves-effect ">Let an <span class="instincdev">InstincDev</span> Website
-                        work for you!</a>
-                    </div>
-                    <div id="service-dev" class="carousel-item service-dev " href="#one!">
-                        <h3>Website Development</h3>
-                        <p>If you don't have a website...</p>
-                        <p>you should get one right away!</p>
-                        <div class="">
+                <ul class="collapsible popout center">
+                    <li  class="" >
+                        <h3 class="collapsible-header"href="#develpment"><i class="fas fa-code"></i>Website Development</h3>
+                        <div id="" class="collapsible-body service-dev">
+                            <span>If you don't have a website...</span>
+                            <p>you should get one right away!</p>
                             <ul>
-                            <li>
-                                <span class="instincdev">Build</span> credibility in
-                                your field.
-                            </li>
-                            <li>
-                                <span class="instincdev">Centralize</span> all your
-                                business information and marketing messages.
-                            </li>
-                            <li>
-                                <span class="instincdev">Promote</span> your products,
-                                services, and yourself to existing and potential
-                                clientele.
-                            </li>
-                            <li>
-                                <span class="instincdev">Interact</span> with the local
-                                and global community.
-                            </li>
-                        </ul>
-                    </div>
+                                <li>
+                                    <span class="instincdev">Build</span> credibility in
+                                    your field.
+                                </li>
+                                <li>
+                                    <span class="instincdev">Centralize</span> all your
+                                    business information and marketing messages.
+                                </li>
+                                <li>
+                                    <span class="instincdev">Promote</span> your products,
+                                    services, and yourself to existing and potential
+                                    clientele.
+                                </li>
+                                <li>
+                                    <span class="instincdev">Interact</span> with the local
+                                    and global community.
+                                </li>
+                            </ul>
                         </div>
-                        <div id="" class="carousel-item service-design " href="#two!">
-                            <h3>Design</h3>
-                          <p>Already have a website?</p>
-                          <p>
-                              We will analyze it to ensure that it meets today's security
-                              and accessibility standards.
-                          </p>
-                          <div>
-                                <ul>
+                    </li>
+                    <li id="" class="" href="#design">
+                        <h3 class="collapsible-header"> <i class="fas fa-desktop"></i> Design</h3>
+                        <div class="collapsible-body service-design">
+                            <p>Already have a website?</p>
+                            <p>
+                                We will analyze it to ensure that it meets today's security
+                                and accessibility standards.
+                            </p>
+                            <ul>
                                 <li>
                                     Is your website
                                     <span class="instincdev">Accessible</span> to meet the
@@ -304,15 +300,15 @@
                                     the latest eye-catching graphics and easy-to-read fonts?
                                 </li>
                             </ul>
-                          </div>
                         </div>
-                        <div class="carousel-item service-update " href="#three!">
-                            <h3>Update</h3>
-                          <p>
+                    </li>
+                    <li class="" href="#update">
+                        <h3 class="collapsible-header"><i class="fas fa-pen"></i> Update</h3>
+                        <div class="collapsible-body service-update">
+                            <p>
                             If you are pleased with your website...
                             <span>look again!</span>
-                        </p>
-                        <div>
+                            </p>
                             <ul>
                                 <li>
                                     Are your
@@ -332,15 +328,15 @@
                                 </li>
                             </ul>
                         </div>
-                        </div>
-                        <div class="carousel-item service-main" href="#four!">
-                          <h3>Maintenance</h3>
-                          <p>
+                    </li>
+                    <li class="" href="#maintenance">
+                        <h3 class="collapsible-header"><i class="fas fa-file-code"></i> Maintenance</h3>
+                        <div class="collapsible-body service-main">
+                            <p>
                             If you use any
                             <span >InstincDev</span> website service,
                             inquire about our...
-                        </p>
-                        <div>
+                            </p>
                             <ul>
                                 <li>
                                     <span >Maintenance</span> services to
@@ -348,8 +344,12 @@
                                 </li>
                             </ul>
                         </div>
-                        </div>
-                </div>
+                    </li>
+                </ul>
+            <div class="service-slider carousel-fixed-item center">
+                <a class="btn waves-effect ">Let an <span class="instincdev">InstincDev</span> Website
+                work for you!</a>
+            </div>
         </section>
 <!-- Portfolio -->
         <section class="row">
@@ -846,7 +846,7 @@
         <script>
             M.Sidenav.init(document.querySelector('.sidenav'))
 
-            M.Carousel.init(document.querySelectorAll('.carousel'), {fullWidth: true, indicators: true});
+            M.Collapsible.init(document.querySelectorAll('.collapsible'), {fullWidth: true, indicators: true});
         </script>
     </body>
 </html>

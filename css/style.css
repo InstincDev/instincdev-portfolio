@@ -372,7 +372,7 @@ nav {
     color: #291b25;
 }
 
-.service-slider a{
+.service-collapsible a{
     color: #292929;;
     border-radius: 0.25rem;
     background: linear-gradient(
@@ -381,8 +381,16 @@ nav {
         rgba(97, 166, 171, 1) 66%
     );
 }
-.service-slider span{
+.service-collapsible span{
     color:#f6f6e9;
+}
+
+.service-collapsible{
+    background: url("../assets/beach_bg.jpg") no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+    color: #f6f6e9;
+    padding: 1rem;
 }
 
 .projects{

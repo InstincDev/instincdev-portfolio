@@ -402,6 +402,9 @@ nav {
     color:#291b25 !important;
 }
 
+.project-img{
+    /* max-height: 30rem; */
+}
 .card-content p{
     font-size: 1.2rem;
     text-align: left !important;

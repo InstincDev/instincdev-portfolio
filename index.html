@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta
             name="description"
-            content=" InstincDev will create a website that will showcase your business, menu, resume, and much more. Proudly serving Escambia, Santa Rosa, Okaloosa, Walton counties and beyond. Experience InstincDev Development and Design."
+            content=" Websites and Applications to showcase your business, menu, resume, and much more. Proudly serving Escambia, Santa Rosa, Okaloosa, Walton counties and beyond. Experience InstincDev Development and Design."
         />
         <meta
             name="keywords"
@@ -25,34 +25,58 @@
             crossorigin="anonymous"
         ></script>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous"
-        />
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
-       <!-- Header -->
-        <!-- Full Nav -->
-        <header id="fullNav">
-            <div class="navContain">
-                <a href="index.html" class="logo"
-                    ><img
-                        src="./assets/5.png"
-                        alt="instincdev lotus flower logo"
-                />
+<!-- Navbar -->
+        <nav> 
+            <div class=" nav-wrapper container">
+                    <a href="index.html" class="brand-logo">
                     <h3>InstincDev</h3>
-                </a>
-
-               
-
-                <nav>
-                    <ul class="navBar">
+                    </a>
+                    <a
+                    href="#"
+                    data-target="mobile-demo"
+                    class="sidenav-trigger "
+                    ><i class="fas fa-bars"></i
+                ></a>
+                <ul class=" uppercase navbar right hide-on-med-and-down" >
+                    <li id="navHome">
+                        <a href="index.html" id="showHome">
+                            Home
+                        </a>
+                    </li>
+                    <li id="navAbout">
+                        <a href="index.html#about" id="showAbout">
+                            About
+                        </a>
+                    </li>
+                    <li id="navServices">
+                        <a href="services.html" id="showServices">
+                            Services    
+                        </a>
+                    </li>
+                    <li id="navProjects">
+                        <a href="projects.html" id="showProjects">
+                            Projects 
+                        </a>
+                    </li>
+                    <li id="navContact">
+                        <a href="contact.html#contact" id="showContact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                    
+                <ul id="mobile-demo" class="sidenav">
                         <li id="navHome">
                             <a href="index.html" id="showHome">
                                 Home
@@ -69,7 +93,9 @@
                             </a>
                         </li>
                         <li id="navProjects">
-                             <a href="projects.html" id="showProjects">
+
+                             <a href="index.html#projects" id="showProjects">
+
                                 Projects 
                             </a>
                         </li>
@@ -78,147 +104,509 @@
                                 Contact
                             </a>
                         </li>
-                    </ul>
-                </nav>
+                </ul>
             </div>
-        </header>
-
-        <!-- Mobile Nav -->
-        <header id="mobileNav">
-            <div class="navContain">
-                <a href="index.html" class="logo"
-                    ><img
-                        src="./assets/5.png"
-                        alt="instincdev lotus flower logo"
-                /> 
-            </a>
-
-               
-
-                <input type="checkbox" class="hamburger" id="hamburger" />
-                <label for="hamburger" class="hamburgerToggle">
-                    <div class="spinner diagonal part-1"></div>
-                    <div class="spinner horizontal"></div>
-                    <div class="spinner diagonal part-2"></div>
-                </label>
-
-                <div id="mobileMenu">
-                    <ul class="mobileMenuInner">
-                        <li>
-                            <a href="index.html" class="mobileNavLink">
-                                <i class="fas fa-home"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html#about" class="mobileNavLink">
-                                <i class="fas fa-user"></i>
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services.html" class="mobileNavLink">
-                            <i class="fas fa-laptop-code"></i>
-                            Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="mobileNavLink">
-                                <i class="fas fa-code-branch"></i>
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html#contact" class="mobileNavLink">
-                                <i class="fas fa-envelope"> </i
-                                    >
-                            Contact
-                        </a>
-                        </li>
-                    </ul>
+        </nav>
+<!-- Home -->
+        <section id="home" >
+               <div class="home">
+                    <div class="homeTxt">
+                        <h1>Hello, I am Chanel</h1>
+                        <p>Full Stack Software Engineer</p>
+                        <div class="homeBtns">
+                    <a  class='uppercase' href="contact.html">need a site?</a>
+                    <a  class='uppercase' href="projects.html">need a dev?</a>
                 </div>
-            </div>
-        </header>
-
-
-        <!-- Home -->
-        <section id="home" class="home">
-           <div class="homeTxt">
-                <h1>Hello, I am Chanel</h1>
-            <p>Full Stack Software Engineer</p>
-            <div class="homeBtns">
-            <a  href="contact.html">Contact</a>
-            <a  href="projects.html">Portfolio</a>
-            </div>
+                    </div>
+                   
+                        <img src="./assets/headshots1.png" alt="Chanel is an African-American female with glasses, curly hair and a friendly smile" />
+                </div>
             
-            </div>
-            <div class="homeImg">
-                <img src="./assets/headshots1.png" alt="image of instincdev" />
-            </div>
-            
-            
+                
         </section>
-
-        
-        <section >
-                <!-- Services -->
-                <section class="homeServicesText">
-                <h3>My Services</h3>
-                <p>I am dedicated to providing websites and applications that represent my clients&apos; vision for business and customer service. Following an initial consultation, I develop a detailed proposal, with an action plan to clearly define each step of the creative process.
-                </p>
-                <p>How may I help you today?</p>
-                </section>
-                <section class="homeServices">
-                    <section class="homeService">
-                        <span class="icon">
+<!-- Service Cards -->
+        <section class='card center row service_cards'>
+                    <section class=" service card-content row col s6 m6 l3">
+                        <span class="col s12 m12 icon">
                               <i class="fas fa-code"></i>
                         </span>
-                        <a href="services.html">
+                        <span class="col s12 m12">
+                            <a href="#development" >
                             Development
                         </a>
+                        </span>
+                        
                     </section>
-                    <section class="homeService">
-                        <span class="icon">
+                    <section class="service card-content row col s6 m6 l3">
+                        <span class="col s12 m12 icon">
                            <i class="fas fa-desktop"></i>
                         </span>
-                        <a href="services.html#design">
-                            Design
-                        </a>
-                    </section>
-                    <!-- About -->
-                    <section class="homeService">
-                        <span class="icon">
-                           </i><i class="fas fa-pen"></i>
+                        <span class="col s12 m12">
+                            <a href="#design">
+                                                        Design
+                            </a>
                         </span>
-                        <a href="services.html#update">
-                            Updates
-                        </a>
+                        
                     </section>
-                    <section class="homeService">
-                        <span class="icon">
+                    <section class="service card-content row col s6 m6 l3">
+                        <span class="col s12 m12 icon">
+                           <i class="fas fa-pen"></i>
+                        </span>
+                        <span class="col s12 m12 ">
+                            <a href="#updates">
+                                                                                                                    Updates
+                                                                                </a>
+                        </span>
+                        
+                    </section>
+                    <section class="service card-content row col s6 m6 l3">
+                        <span class="col s12 m12 icon">
                             <i class="fas fa-file-code"></i>
                         </span>
-                        <a href="services.html#maintenance">
-                            Maintenance
-                            </a
+                        <span class="col s12 m12 ">
+                            <a href="#maintenance">
+                                Maintenance
+                            </a>
+                        </span>
+                    </section>
+
+        </section>
+<!-- Quote -->            
+        <section class="row quote">
+            <span class="col s12 m6 l3 offset-l1">
+                <img src="./assets/5.png" alt="" class=" center col s12 m12">
+            </span>        
+            <span class="card quote-card col s12 m6">
+                <h1 class="bannerH1 center card-title">
+            "I create customized proposal packages to meet your unique
+            business needs."
+                </h1>
+                <div class="divider"></div>
+                <p class="card-content col s12 m12 l12">
+                    I am dedicated to providing websites and applications that represent my clients&apos; vision for business and customer service. Following an initial consultation, I develop a detailed proposal, with an action plan to clearly define each step of the creative process.
+                </p>  
+            </span>
+        </section>   
+<!-- Contact Highlight -->
+        <section class="center ">
+            <section class="highlightTxt">
+                <h4>
+                    Let
+                    <span class="instincdev">InstincDev</span>
+                    work for you!
+                </h4>
+                <p>
+                    Contact me today to develop, update, or expand your
+                    web presence.
+                </p>
+            </section>
+            <section >
+                <ul class="highlightIcon socials row">
+                    <li class="col s6 m3"title="Calendly">
+                        <!-- Calendly link widget begin -->
+                        <link
+                            href="https://assets.calendly.com/assets/external/widget.css"
+                            rel="stylesheet"
+                        />
+                        <script
+                            src="https://assets.calendly.com/assets/external/widget.js"
+                            type="text/javascript"
+                            async
+                        ></script>
+                        <a
+                            href=""
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'}); return false;"
+                            ><i class="fas fa-video"></i
+                        ></a>
+                        <!-- Calendly link widget end -->
+                    </li>
+                    <li class="col s6 m3">
+                        <a
+                        title="Twitter"
+                        href="https://twitter.com/instincdev"
+                        target="_blank"
+                    >
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="col s6 m3">
+                        <a
+                        title="LinkedIn"
+                        href="https://www.www.linkedin.com/in/chanel-instincdev"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="col s6 m3">
+                        <a title="Contact" href="contact.html">
+                    
+                        <i class="fas fa-envelope"></i>
+                    
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+<!-- Service Descriptions -->
+        <section class="service-collapsible">
+            <h3>My Services</h3>
+                <ul class="collapsible popout center">
+                    <li  class="" >
+                        <h3 class="collapsible-header"href="#develpment"><i class="fas fa-code"></i>Website Development</h3>
+                        <div id="" class="collapsible-body service-dev">
+                            <span>If you don't have a website...</span>
+                            <p>you should get one right away!</p>
+                            <ul>
+                                <li>
+                                    <span class="instincdev">Build</span> credibility in
+                                    your field.
+                                </li>
+                                <li>
+                                    <span class="instincdev">Centralize</span> all your
+                                    business information and marketing messages.
+                                </li>
+                                <li>
+                                    <span class="instincdev">Promote</span> your products,
+                                    services, and yourself to existing and potential
+                                    clientele.
+                                </li>
+                                <li>
+                                    <span class="instincdev">Interact</span> with the local
+                                    and global community.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="" class="" href="#design">
+                        <h3 class="collapsible-header"> <i class="fas fa-desktop"></i> Design</h3>
+                        <div class="collapsible-body service-design">
+                            <p>Already have a website?</p>
+                            <p>
+                                We will analyze it to ensure that it meets today's security
+                                and accessibility standards.
+                            </p>
+                            <ul>
+                                <li>
+                                    Is your website
+                                    <span class="instincdev">Accessible</span> to meet the
+                                    needs of the all visitors?
+                                </li>
+                                <li>
+                                    Is your website
+                                    <span class="instincdev">Responsive</span> - visually
+                                    appealing on all devices?
+                                </li>
+                                <li>
+                                    Has your website
+                                    <span class="instincdev">Improved</span> over time with
+                                    the latest eye-catching graphics and easy-to-read fonts?
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="" href="#update">
+                        <h3 class="collapsible-header"><i class="fas fa-pen"></i> Update</h3>
+                        <div class="collapsible-body service-update">
+                            <p>
+                            If you are pleased with your website...
+                            <span>look again!</span>
+                            </p>
+                            <ul>
+                                <li>
+                                    Are your
+                                    <span class="instincdev">prices</span> up-to-date?
+                                </li>
+                                <li>
+                                    Are your
+                                    <span class="instincdev">services</span> up-to-date?
+                                </li>
+                                <li>
+                                    Are your
+                                    <span class="instincdev">products</span> up-to-date?
+                                </li>
+                                <li>
+                                    Maybe you have a new facility, new staff, or even a new
+                                    hairdo!
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="" href="#maintenance">
+                        <h3 class="collapsible-header"><i class="fas fa-file-code"></i> Maintenance</h3>
+                        <div class="collapsible-body service-main">
+                            <p>
+                            If you use any
+                            <span >InstincDev</span> website service,
+                            inquire about our...
+                            </p>
+                            <ul>
+                                <li>
+                                    <span >Maintenance</span> services to
+                                    keep your website looking fresh and up-to-date.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            <div class="service-slider carousel-fixed-item center">
+                <a class="btn waves-effect ">Let an <span class="instincdev">InstincDev</span> Website
+                work for you!</a>
+            </div>
+        </section>
+<!-- Portfolio -->
+        <section class="row">
+            <div class=" row  projects">
+                 <h2>Portfolio</h2>
+                    <div class=" websiteSection col s12 m12">
+                        <div class="card-title">
+                            <h3>Websites</h3>
+                        </div>
+                        <div class="card col s12 m4">
+                            <div class="card-image">
+                                <img src="./assets/adam_nous_academy2.png" alt="screenshot of the Adam Nous Academy website">
+                                
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Adam Nous Academy</span>
+                                <p>
+                                    A fully responsive WordPress site for a private
+                                    educational organization.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://adamnous.us/" class="siteLink">Visit Site</a>
+                               </div>
+                        </div>
+                        <div class="card col s12 m4">
+                            <div class="card-image">
+                                <img src="./assets/good_place2.png" alt="screenshot of the good place yogurt website">
+                               
+                            </div>
+                            <div class="card-content">
+                                 <span class="card-title">The Good Place</span>
+                                <p>
+                                    Sit back, relax and enjoy this one page responsive
+                                    Frozen Yogurt website inspired by 'The Good Place'.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://the-good-place.netlify.app" class="siteLink" >Visit Site</a>
+                              </div>
+                        </div>
+                        <div class="card col s12 m4">
+                            <div class="card-image">
+                                 <img src="./assets/beaks_n_squeaks2.png" alt="screenshot of Beaks_N_Squeaks website">
+                                 <span class="card-title">Beaks-N-Squeaks</span>
+                            </div>
+                           <div class="card-content">
+                                <p>
+                                    A modern responsive website for a full-service
+                                    Veterinary Center.
+                                </p>
+                           </div>
+                           <div class="card-action">
+                            <a href="https://beaks-n-squeaks.netlify.app" class="siteLink">Visit Site</a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class=" applicationSection col s12 m12">
+                        <div class="card-title">
+                            <h3>Applications</h3>
+                        </div>
+                        <div class="card col s12 m4">
+                        <div class="card-image">
+                                    <img src="./assets/mvc_lecture.png" alt="Screenshot of the hogwarts directory website" class="project-img">
+                                    <span class="card-title">
+                                        Hogwarts School Directory
+                                    </span>
+                        </div>
+                                <div class="card-content ">
+                                    <p>
+                                        Fullstack directory of Harry Potter characters. Created to accompany MVC Lecture video.
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="" class="siteLink">
+                                        Visit Site
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="card col s12 m4">
+                            <div class="card-image">
+                                <img src="./assets/dr_who_bg_picker2.png" alt=""class="project-img">
+                                <span class="card-title">Doctor Who Background Picker</span>
+                            </div>
+                        <div class="card-content">
+                            <p>
+                                Application that displays Dr. Who inspired background images.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="" class="siteLink">Visit Site</a>
+                        </div>
+                        </div>
+                        <div class="card col s12 m4">
+                            <div class="card-image">
+                                <img src="./assets/spellwell (2).png" alt=""class="project-img">
+                                <span class="card-title">Drinks On Me</span>
+                            </div>
+                        <div class="card-content">
+                            <p>
+                                Application that allows users to input a type of alcohol and view a carousel of cocktails.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="" class="siteLink">Visit Site</a>
+                        </div>
+                        </div>
+                        <div class="card col s12 m4">
+                        <div class="card-image">
+                            <img src="./assets/nasa_facts3.png" alt=""class="project-img">
+                            <span class="card-title">Solar System Facts</span>
+                        </div>
+                    <div class="card-content">
+                        <p>
+                            Learn random facts about the Sun and planets in this solar system.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="" class="siteLink">Visit Site</a>
+                    </div>
+                        </div>
+                        <div class="card col s12 m4">
+                        <div class="card-image">
+                            <img src="./assets/foogle_gu2.png" alt=""class="project-img">
+                            
+                        </div>
+                    <div class="card-content">
+                        <span class="card-title">Google Clone</span>
+
+                        <p>
+                            A functioning Front-End for Google Search, Google Image Search, and Google Advanced Search.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="" class="siteLink">Visit Site</a>
+                    </div>
+                        </div>
+                        <div class="card col s12 m4">
+                        <div class="card-image">
+                            <img src="./assets/hogwarts_directory2.png" alt=""class="project-img">
+                            
+                        </div>
+                    <div class="card-content">
+                        <span class="card-title">MVC Lecture</span>
+                        <p>
+                            Join Hogwarts students as they discuss the Mossa Vitri Charm, known by muggles as Model View Controller!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="" class="siteLink">Visit Site</a>
+                    </div>
+                        </div>
+                        <div class="card col s12 m4">
+                            <div class="card-image">
+                                <img src="./assets/drinks_on_me2.png" alt=""class="project-img">
+                                
+                            </div>
+                        <div class="card-content">
+                            <span class="card-title">MVC Lecture</span>
+                            <p>
+                                Join Hogwarts students as they discuss the Mossa Vitri Charm, known by muggles as Model View Controller!
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="" class="siteLink">Visit Site</a>
+                        </div>
+                            </div>
+                            <div class="card col s12 m4">
+                                <div class="card-image">
+                                    <img src="./assets/lets_eat2.png" alt=""class="project-img">
+                                    
+                                </div>
+                            <div class="card-content">
+                                <span class="card-title">MVC Lecture</span>
+                                <p>
+                                    Join Hogwarts students as they discuss the Mossa Vitri Charm, known by muggles as Model View Controller!
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="" class="siteLink">Visit Site</a>
+                            </div>
+                                </div>
+                                <div class="card col s12 m4">
+                                    <div class="card-image">
+                                        <img src="./assets/language_learning2.png" alt=""class="project-img">
+                                        
+                                    </div>
+                                <div class="card-content">
+                                    <span class="card-title">MVC Lecture</span>
+                                    <p>
+                                        Join Hogwarts students as they discuss the Mossa Vitri Charm, known by muggles as Model View Controller!
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="" class="siteLink">Visit Site</a>
+                                </div>
+                                    </div>
+                                    <div class="card col s12 m4">
+                                        <div class="card-image">
+                                            <img src="./assets/hp_howler2.png" alt=""class="project-img">
+                                            
+                                        </div>
+                                    <div class="card-content">
+                                        <span class="card-title">MVC Lecture</span>
+                                        <p>
+                                            Join Hogwarts students as they discuss the Mossa Vitri Charm, known by muggles as Model View Controller!
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="" class="siteLink">Visit Site</a>
+                                    </div>
+                                        </div>
+                         
+                    </div>
+            </div>
+        </section>             
+<!-- About -->
+        <section id="about" class="row card ">
+            <h2 class="card-title">About</h2>
+            <div class="card col s12 m6 offset-m3">
+                <img src="./assets/headshots1.png" alt="instincdev lotus flower logo" class="col s12 m6"/>
+                    <p id="aboutSubHead" class="centered">Northwest Florida is where I work, live, and play!</p>
+                    <p>
+                        As a Software Engineer with a passion for Developer Relations, I am fortunate to have combined my love of teaching with that of Fullstack web applications. Utilizing JavaScript and Python, I create educational software and professional websites. 
+                    </p>
+                    <p>
+                        During the pandemic, when the teaching and learning process was compromised, I made a career decision to focus on freelancing in the tech industry. Now, I promote the growth and visibility of individuals and local businesses.
+                    </p>
+                    <p> 
+                        I am currently accepting new freelance clients who are seeking an accessible and responsive web presence.
+                    </p> 
+            </div>
+        </section>
+<!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <section id="contact">
+                <div class="formContain">
+                    <section class="contactHead">
+                        <h3>Let's Get To Work!</h3>
+                        <p>Proudly serving:</p>
+                        <ul class="instincdev">
+                            <li>Escambia,</li>
+                            <li>Santa Rosa,</li>
+                            <li>Okaloosa,</li>
+                            <li>Walton</li>
+                        </ul>
+                        <span
+                            >Counties and<span class="instincdev">
+                                Beyond!</span
+                            ></span
                         >
                     </section>
-                </section>
-               
-                <!-- Contact Highlight -->
-                <section class="contactHighlight">
-                    <section class="highlightTxt">
-                        <h4>
-                            Let
-                            <span class="instincdev">InstincDev</span>
-                            work for you!
-                        </h4>
-                        <p>
-                            Contact me today to develop, update, or expand your
-                            web presence.
-                        </p>
-                    </section>
-                    <section class="locations">
+                    <section class="contactOther">
                         <ul id="highlightIcon" class="socials">
                             <li title="Calendly">
                                 <!-- Calendly link widget begin -->
@@ -232,32 +620,199 @@
                                     async
                                 ></script>
                                 <a
-                                    href=""
-                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'}); return false;"
-                                    ><i class="fas fa-video"></i
-                                ></a>
+                                    href="#"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'});return false;"
+                                    ><i class="fas fa-video"></i>
+                                </a>
                                 <!-- Calendly link widget end -->
                             </li>
-                            <a
-                                title="Twitter"
-                                href="https://twitter.com/instincdev"
-                                target="_blank"
-                            >
-                                <li><i class="fab fa-twitter"></i></li>
-                            </a>
-                            <a
-                                title="LinkedIn"
-                                href="https://www.www.linkedin.com/in/chanel-instincdev"
-                                target="_blank"
-                            >
-                                <li><i class="fab fa-linkedin-in"></i></li>
-                            </a>
-                            <a title="Contact" href="contact.html">
-                                <li><i class="fas fa-envelope"></i></li>
-                            </a>
+                            <li>
+                                <a
+                                    title="Twitter"
+                                    href="https://twitter.com/instincdev"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    title="LinkedIn"
+                                    href="https://www.linkedin.com/in/chanel-instincdev"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
                         </ul>
                     </section>
-                </section>
+                    <form
+                        class="contactForm"
+                        name="contact"
+                        method="POST"
+                        data-netlify-recaptcha="true"
+                        netlify-honeypot="bot-field"
+                        data-netlify="true"
+                    >
+                        <div class="hidden">
+                            <label>
+                                This NOT for human consumption
+                                <input name="bot-field" />
+                            </label>
+                        </div>
+                        <div class="visitorInfo col-12 m-4">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="floatingName"
+                                        name="name"
+                                        placeholder="Full Name"
+                                    />
+                                    <label for="floatingName">Full Name</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="floatingEmail"
+                                        name="email"
+                                        placeholder="Email"
+                                    />
+                                    <label for="floatingEmail">Email</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-6 m-4">
+                            <div class="form-floating">
+                                <textarea
+                                    class="form-control"
+                                    id="floatingTextarea"
+                                    name="message"
+                                    placeholder="Comments"
+                                ></textarea>
+                                <label for="floatingTextarea">Comments</label>
+                            </div>
+                            <div
+                                data-netlify-recaptcha="true"
+                                class="recaptcha"
+                            ></div>
+                        </div>
+                        <div class="modal-footer">
+                            <input class="contact_btn btn modal-close waves-effect" type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </section>
+            </div>
+        </div>
+<!-- Footer -->
+        <footer class="page-footer">
+         <!-- Contact Form -->
+         <div class="container">
+            <div class="row">
+                <section id="contact" class="col 16 s12">
+                    <div class="formContain row">
+                        <section class="contactHead col 16 s12">
+                            <h3>Let's Get To Work!</h3>
+                            <p>Proudly serving:</p>
+                            <ul class="instincdev">
+                                <li>Escambia,</li>
+                                <li>Santa Rosa,</li>
+                                <li>Okaloosa,</li>
+                                <li>Walton</li>
+                            </ul>
+                            <span
+                                >Counties and<span class="instincdev">
+                                    Beyond!</span
+                                ></span
+                            >
+                        </section>
+                        <section class="contactOther">
+                            <ul id="highlightIcon" class="socials">
+                                <li title="Calendly">
+                                    <!-- Calendly link widget begin -->
+                                    <link
+                                        href="https://assets.calendly.com/assets/external/widget.css"
+                                        rel="stylesheet"
+                                    />
+                                    <script
+                                        src="https://assets.calendly.com/assets/external/widget.js"
+                                        type="text/javascript"
+                                        async
+                                    ></script>
+                                    <a
+                                        href="#"
+                                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'});return false;"
+                                        ><i class="fas fa-video"></i>
+                                    </a>
+                                    <!-- Calendly link widget end -->
+                                </li>
+                                <li>
+                                    <a
+                                        title="Twitter"
+                                        href="https://twitter.com/instincdev"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        title="LinkedIn"
+                                        href="https://www.linkedin.com/in/chanel-instincdev"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <form
+                            class="contactForm"
+                            name="contact"
+                            method="POST"
+                            data-netlify-recaptcha="true"
+                            netlify-honeypot="bot-field"
+                            data-netlify="true"
+                        >
+                            <div class="hidden">
+                                <label>
+                                    This NOT for human consumption
+                                    <input name="bot-field" />
+                                </label>
+                            </div>
+                            <div class="visitorInfo col-12 m-4">
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="floatingName"
+                                            name="name"
+                                            placeholder="Full Name"
+                                        />
+                                        <label for="floatingName">Full Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="floatingEmail"
+                                            name="email"
+                                            placeholder="Email"
+                                        />
+                                        <label for="floatingEmail">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+
 
                 <!-- Projects -->
         <section id="projects">
@@ -295,12 +850,51 @@
                         /></a>
                     </section>
 
+
+                <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="websites">
+                <h3>Websites</h3>
+                <section class="project right">
+                    <section class="pjtImg">
+                        <a href="https://adamnous.us" target="_blank"
+                            ><img
+                                src="assets/adam_nous_academy.png"
+                                alt="adam nous site image"
+                                
+                        /></a>
+                    </section>
+                    <section class="pjtTxt">
+                        <a href="https://adamnous.us" target="_blank"
+                            ><h3>Adam Nous Academy</h3></a
+                        >
+                        <p>
+                            A fully responsive WordPress site for a private
+                            educational organization.
+                        </p>
+                    </section>
+                </section>
+                <section class="project left">
+                    <section class="pjtImg">
+                        <a
+                            href="https://beaks-n-squeaks.netlify.app"
+                            target="_blank"
+                            ><img
+                                src="./assets/beaks-n-squeaks.png"
+                                alt="screenshot of beaks and squeaks website"
+                                
+                        /></a>
+                    </section>
+
+
                     <section class="pjtTxt">
                         <a
                             href="https://beaks-n-squeaks.netlify.app"
                             target="_blank"
                             ><h3>Beaks-N-Squeaks</h3></a
                         >
+
 
                         <p>
                             A modern responsive website for a full-service
@@ -405,11 +999,118 @@
                         >
 
                         <p>
+
+
+                        <p>
+                            A modern responsive website for a full-service
+                            Veterinary Center.
+                        </p>
+                    </section>
+                </section>
+                <section class="project right">
+                    <section class="pjtImg">
+                        <a href="https://the-good-place.netlify.app" target="_blank"
+                            ><img
+                                src="assets/the-good-place-screenshot.png"
+                                alt="the good place site image"
+                        /></a>
+                    </section>
+                    <section class="pjtTxt">
+                        <a href="https://the-good-place.netlify.app" target="_blank"
+                            ><h3>The Good Place</h3></a
+                        >
+                        <p>
+                            Sit back, relax and enjoy this one page responsive
+                            Frozen Yogurt website inspired by 'The Good Place'.
+                        </p>
+                    </section>
+                </section>
+            </div>
+            <div class="applications">
+                <h3>Applications</h3>
+                <section class="project left">
+                    <section class="pjtImg">
+                        <a
+                            href="https://spellwell.cyclic.app"
+                            target="_blank"
+                            ><img
+                                src="./assets/spellwell.png"
+                                alt="screenshot of language learning study website"
+                        /></a>
+                    </section>
+
+                    <section class="pjtTxt">
+                        <a
+                            href="https://spellwell.cyclic.app"
+                            target="_blank"
+                            ><h3>SpellWell</h3></a
+                        >
+
+                        <p>
+                            SpellWell is a spelling application designed for students, teachers, and parents / guardians.
+                        </p>
+                    </section>
+                </section>
+                <section class="project right">
+                    <section class="pjtImg">
+                        <a href="https://hogwarts-school-directory.herokuapp.com/" target="_blank"
+                            ><img
+                                src="assets/hogwarts_directory.png"
+                                alt="the hogwarts directory app image"
+                        /></a>
+                    </section>
+                    <section class="pjtTxt">
+                        <a href="https://hogwarts-school-directory.herokuapp.com/" target="_blank"
+                            ><h3>Hogwarts Directory</h3></a
+                        >
+                        <p>
+                            A Harry Potter themed roster of Hogwarts students, staff, and alumni. Created to accompany Harry Potter Themed MVC Lecture video.
+                        </p>
+                    </section>
+                </section>
+                <section class="project left">
+                    <section class="pjtImg">
+                        <a href="https://youtu.be/__oXGxIcDCM" target="_blank"
+                            ><img
+                                src="assets/mvc_lecture.png"
+                                alt="mvc site image"
+                        /></a>
+                    </section>
+                    <section class="pjtTxt">
+                        <a href="https://youtu.be/__oXGxIcDCM" target="_blank"
+                            ><h3>MVC Lecture</h3></a
+                        >
+                        <p>
+                            Join Hogwarts students as they discuss the Mossa Vitri Charm, known by muggles as Model View Controller!
+                        </p>
+                    </section>
+                </section>
+                <section class="project right">
+                    <section class="pjtImg">
+                        <a
+                            href="https://solar-system-facts.netlify.app"
+                            target="_blank"
+                            ><img
+                                src="./assets/nasa_facts3.png"
+                                alt="screenshot of nasa facts website"
+                        /></a>
+                    </section>
+
+                    <section class="pjtTxt">
+                        <a
+                            href="https://solar-system-facts.netlify.app"
+                            target="_blank"
+                            ><h3>Solar System Facts</h3></a
+                        >
+
+                        <p>
+
                             Random Facts About The Sun and Planets in This Solar System
 
                             Data and images obtained with the NASA API
                         </p>
                     </section>
+
                 </section>
                 <section class="project left">
                     <section class="pjtImg">
@@ -453,6 +1154,51 @@
                 </section>
                 <section class="project left">
                     <section class="pjtImg">
+
+                </section>
+                <section class="project left">
+                    <section class="pjtImg">
+                        <a
+                            href=" hp-howler.netlify.app "
+                            target="_blank"
+                            ><img
+                                src="./assets/hp_howler2.png"
+                                alt="screenshot of harry potter howler website"
+                        /></a>
+                    </section>
+
+                    <section class="pjtTxt">
+                        <a
+                            href=" hp-howler.netlify.app "
+                            target="_blank"
+                            ><h3>Harry Potter Howler Generator</h3></a
+                        >
+
+                        <p>
+                            Application that allows users to input a type of a name and create a Howler.
+                        </p>
+                    </section>
+                </section>
+                <section class="project right">
+                    <section class="pjtImg">
+                        <a href="https://language-study-tracker-instincdev.netlify.app" target="_blank"
+                            ><img
+                                src="assets/language_learning.png"
+                                alt="language learning site image"
+                        /></a>
+                    </section>
+                    <section class="pjtTxt">
+                        <a href="https://language-study-tracker-instincdev.netlify.app" target="_blank"
+                            ><h3>Language Study App</h3></a
+                        >
+                        <p>
+                            Practice and keep track of words learned in specific languages.
+                        </p>
+                    </section>
+                </section>
+                <section class="project left">
+                    <section class="pjtImg">
+
                         <a href="https://dw-bg-picker.netlify.app" target="_blank"
                             ><img
                                 src="assets/dr_who_bg_picker.png"
@@ -493,6 +1239,7 @@
                 </section>
                 
             </div>
+
         </section>
                 
         <!-- About  -->
@@ -515,6 +1262,30 @@
             </section>
 
         </section>
+
+        </section>
+                
+        <!-- About  -->
+        <section id="about" >
+        <section class="aboutImg">
+            <img src="assets/5.png" alt="">
+        </section>
+        <section class="aboutTxt">
+            <h2>About</h2>
+            <p id="aboutSubHead" class="centered">Northwest Florida is where I work, live, and play!</p>
+            <p>
+                As a Software Engineer with a passion for Developer Relations, I am fortunate to have combined my love of teaching with that of Fullstack web applications. Utilizing JavaScript and Python, I create educational software and professional websites. 
+            </p>
+            <p>
+                During the pandemic, when the teaching and learning process was compromised, I made a career decision to focus on freelancing in the tech industry. Now, I promote the growth and visibility of individuals and local businesses.
+            </p>
+            <p> 
+                I am currently accepting new freelance clients who are seeking an accessible and responsive web presence.
+            </p> 
+            </section>
+
+        </section>
+
 </section>
 
 <!-- Footer -->
@@ -549,37 +1320,15 @@
                 </a>
             </li>
 
-            <li>
-                <a
-                    title="LinkedIn"
-                    href="https://www.www.linkedin.com/in/chanel-instincdev"
-                    target="_blank"
-                >
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-        </ul>
-        <ul class="socials footerIcon">
-            
-            <li>
-                <a
-                    title="GitHub"
-                    href="https://github.com/InstincDev"
-                    target="_blank"
-                >
-                    <i class="fab fa-github-alt"></i>
-                </a>
-            </li>
-
-            <li>
-                <a title="Contact" href="contact.html">
-                    <i class="fas fa-envelope"> </i
-                ></a>
-            </li>
-        </ul>
-    </section>
-</footer>
 
         <script type="text/javascript" src="js/main.js"></script>
+        <!-- Script for Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            M.Sidenav.init(document.querySelector('.sidenav'))
+
+            M.Collapsible.init(document.querySelectorAll('.collapsible'), {fullWidth: true, indicators: true});
+        </script>
     </body>
 </html>

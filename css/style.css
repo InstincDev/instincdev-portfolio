@@ -115,6 +115,9 @@ ul{
     flex-direction: column;
     margin: 5rem;
 
+}
+
+
 
 nav .container{ 
     width: 100%;
@@ -577,10 +580,12 @@ gap: 1rem;
     background:#03989e;
 }
 
+
 .projects .card-title{
     font-weight: 700 !important;
     color:#291b25 !important;
 }
+
 
 .project-img{
     /* max-height: 30rem; */

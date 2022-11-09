@@ -274,9 +274,6 @@ nav {
 /*************************************/
 
 .quote{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #03989e;
 }
 .quote img{

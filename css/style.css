@@ -332,7 +332,7 @@ width: 70%;
         rgba(97, 166, 171, 1) 26%,
         rgba(2, 215, 223, 0.5931159546656638) 66%
     );
-
+}
 .service_cards{
     position: relative !important;
     top: -1.5rem;
@@ -510,7 +510,7 @@ width: 70%;
     padding: 1rem 3rem;
     font-size: 3rem;
     background: #130413;
-
+}
 .service-design li{
     font-size: 2rem;
     color: #291b25;
@@ -854,4 +854,5 @@ width: 70%;
 
 .page-footer{
     background:#291b25 ;
-} 
+}
+ }

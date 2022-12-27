@@ -121,7 +121,7 @@ footer {
     height: 20%;
     min-height: 325px;
     z-index: -1;
-    background: url("../assets/close_up_code.png") no-repeat 15%;
+    background: url("../assets/banner.png") no-repeat 15%;
     background-size: cover;
 }
 
@@ -1126,11 +1126,11 @@ form .contact_btn:active {
     /** Banner **/
 
     #banner {
-        top: 3%;
+        top: 7rem;
         height: 33%;
         max-height: 400px;
-        min-height: 250px;
-        background: url("../assets/skyline2.jpg") no-repeat;
+        min-height: 253px;
+        background: url("../assets/banner_sm.png") no-repeat;
         background-size: cover;
     }
 
@@ -1263,10 +1263,10 @@ form .contact_btn:active {
     /** Banner **/
 
     #banner {
-        top: 1rem;
+        top: 2rem;
         height: 33%;
         min-height: 325px;
-        background: url("../assets/skyline2.jpg") no-repeat;
+        background: url("../assets/banner.png") no-repeat;
         background-size: cover;
     }
 

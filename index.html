@@ -48,9 +48,6 @@
                 />
                     <h3>InstincDev</h3>
                 </a>
-
-               
-
                 <nav>
                     <ul class="navBar">
                         <li id="navHome">
@@ -64,17 +61,17 @@
                             </a>
                         </li>
                         <li id="navServices">
-                            <a href="services.html" id="showServices">
+                            <a href="index.html#services" id="showServices">
                                 Services    
                             </a>
                         </li>
                         <li id="navProjects">
-                             <a href="projects.html" id="showProjects">
+                             <a href="index.html#projects" id="showProjects">
                                 Projects 
                             </a>
                         </li>
                         <li id="navContact">
-                            <a href="contact.html#contact" id="showContact">
+                            <a href="index.html#contact" id="showContact">
                                 Contact
                             </a>
                         </li>
@@ -92,9 +89,6 @@
                         alt="instincdev lotus flower logo"
                 /> 
             </a>
-
-               
-
                 <input type="checkbox" class="hamburger" id="hamburger" />
                 <label for="hamburger" class="hamburgerToggle">
                     <div class="spinner diagonal part-1"></div>
@@ -117,19 +111,19 @@
                             </a>
                         </li>
                         <li>
-                            <a href="services.html" class="mobileNavLink">
+                            <a href="index.html#services" class="mobileNavLink">
                             <i class="fas fa-laptop-code"></i>
                             Services
                             </a>
                         </li>
                         <li>
-                            <a href="projects.html" class="mobileNavLink">
+                            <a href="index.html#projects" class="mobileNavLink">
                                 <i class="fas fa-code-branch"></i>
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html#contact" class="mobileNavLink">
+                            <a href="index.html#contact" class="mobileNavLink">
                                 <i class="fas fa-envelope"> </i
                                     >
                             Contact
@@ -139,7 +133,6 @@
                 </div>
             </div>
         </header>
-
 
         <!-- Home -->
         <section id="home" class="home">
@@ -159,9 +152,9 @@
             
         </section>
 
-        
-        <section >
-                <!-- Services -->
+<!-- Services -->
+        <section id="services">
+                
                 <section class="homeServicesText">
                 <h3>My Services</h3>
                 <p>I am dedicated to providing websites and applications that represent my clients&apos; vision for business and customer service. Following an initial consultation, I develop a detailed proposal, with an action plan to clearly define each step of the creative process.
@@ -259,7 +252,10 @@
                     </section>
                 </section>
 
-                <!-- Projects -->
+    
+        </section>
+
+<!-- Projects -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="websites">
@@ -488,9 +484,9 @@
                 </section>
                 
             </div>
-        </section>
-                
-        <!-- About  -->
+        </section> 
+
+<!-- About  -->
         <section id="about" >
         <section class="aboutImg">
             <img src="assets/5.png" alt="">
@@ -510,70 +506,188 @@
             </section>
 
         </section>
-</section>
+
+ <!-- Contact Form -->
+        <section id="contact">
+            <div class="formContain">
+                <section class="contactHead">
+                    <h3>Let's Get To Work!</h3>
+                    <p>Proudly serving:</p>
+                    <ul class="instincdev">
+                        <li>Escambia,</li>
+                        <li>Santa Rosa,</li>
+                        <li>Okaloosa,</li>
+                        <li>Walton</li>
+                    </ul>
+                    <span
+                        >Counties and<span class="instincdev">
+                            Beyond!</span
+                        ></span
+                    >
+                </section>
+                <section class="contactOther">
+                    <ul id="highlightIcon" class="socials">
+                        <li title="Calendly">
+                            <!-- Calendly link widget begin -->
+                            <link
+                                href="https://assets.calendly.com/assets/external/widget.css"
+                                rel="stylesheet"
+                            />
+                            <script
+                                src="https://assets.calendly.com/assets/external/widget.js"
+                                type="text/javascript"
+                                async
+                            ></script>
+                            <a
+                                href="#"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/instincdev?hide_gdpr_banner=1'});return false;"
+                                ><i class="fas fa-video"></i>
+                            </a>
+                            <!-- Calendly link widget end -->
+                        </li>
+                        <li>
+                            <a
+                                title="Twitter"
+                                href="https://twitter.com/instincdev"
+                                target="_blank"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                title="LinkedIn"
+                                href="https://www.linkedin.com/in/chanel-instincdev"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <form
+                    class="contactForm"
+                    name="contact"
+                    method="POST"
+                    data-netlify-recaptcha="true"
+                    netlify-honeypot="bot-field"
+                    data-netlify="true"
+                >
+                    <div class="hidden">
+                        <label>
+                            This NOT for human consumption
+                            <input name="bot-field" />
+                        </label>
+                    </div>
+                    <div class="visitorInfo col-12 m-4">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="floatingName"
+                                    name="name"
+                                    placeholder="Full Name"
+                                />
+                                <label for="floatingName">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingEmail"
+                                    name="email"
+                                    placeholder="Email"
+                                />
+                                <label for="floatingEmail">Email</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 m-4">
+                        <div class="form-floating">
+                            <textarea
+                                class="form-control"
+                                id="floatingTextarea"
+                                name="message"
+                                placeholder="Comments"
+                            ></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                        </div>
+                        <div
+                            data-netlify-recaptcha="true"
+                            class="recaptcha"
+                        ></div>
+                    </div>
+                    <input class="contact_btn" type="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
 
 <!-- Footer -->
-<footer>
-    <section class="footerLinks">
-        <ul class="pgLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-        </ul>
-        <ul class="pgLinks">
-            <li><a href="projects.html">Projects</a></li>
-            <li></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </section>
-    <section class="fineprint copy">
-        <img src="./assets/5.png" alt="instincdev lotus flower logo" />
-        <small class="legals"
-            >&copy 2022 All Rights Reserved
-            <a href="/index.html#home">InstincDev</a></small
-        >
-    </section>
-    <section class="fineprint">
-        <ul class="socials footerIcon">
-            <li>
-                <a
-                    title="Twitter"
-                    href="https://twitter.com/instincdev"
-                    target="_blank"
+        <footer>
+            <section class="footerLinks">
+                <ul class="pgLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    
+                </ul>
+                <ul class="pgLinks">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                </ul>
+            </section>
+            <section class="fineprint copy">
+                <img src="./assets/5.png" alt="instincdev lotus flower logo" />
+                <small class="legals"
+                    >&copy 2022 All Rights Reserved
+                    <a href="/index.html#home">InstincDev</a></small
                 >
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
+            </section>
+            <section class="fineprint">
+                <ul class="socials footerIcon">
+                    <li>
+                        <a
+                            title="Twitter"
+                            href="https://twitter.com/instincdev"
+                            target="_blank"
+                        >
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
 
-            <li>
-                <a
-                    title="LinkedIn"
-                    href="https://www.www.linkedin.com/in/chanel-instincdev"
-                    target="_blank"
-                >
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-        </ul>
-        <ul class="socials footerIcon">
-            
-            <li>
-                <a
-                    title="GitHub"
-                    href="https://github.com/InstincDev"
-                    target="_blank"
-                >
-                    <i class="fab fa-github-alt"></i>
-                </a>
-            </li>
+                    <li>
+                        <a
+                            title="LinkedIn"
+                            href="https://www.www.linkedin.com/in/chanel-instincdev"
+                            target="_blank"
+                        >
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="socials footerIcon">
+                    
+                    <li>
+                        <a
+                            title="GitHub"
+                            href="https://github.com/InstincDev"
+                            target="_blank"
+                        >
+                            <i class="fab fa-github-alt"></i>
+                        </a>
+                    </li>
 
-            <li>
-                <a title="Contact" href="contact.html">
-                    <i class="fas fa-envelope"> </i
-                ></a>
-            </li>
-        </ul>
-    </section>
-</footer>
+                    <li>
+                        <a title="Contact" href="contact.html">
+                            <i class="fas fa-envelope"> </i
+                        ></a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
 </body>
 </html>
 

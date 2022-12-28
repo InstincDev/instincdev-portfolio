@@ -1126,7 +1126,7 @@ form .contact_btn:active {
     /** Banner **/
 
     #banner {
-        top: 7rem;
+        top: 5rem;
         height: 33%;
         max-height: 400px;
         min-height: 253px;

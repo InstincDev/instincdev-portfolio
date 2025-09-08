@@ -169,6 +169,14 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 5rem;
+    background: #f6f6e999;
+}
+
+#projects h2 {
+padding: 1.5rem 2rem;
+  color: #f6f6e9;
+  font-size: 3rem;
+  background: #61a6ab;
 }
 
 /*  Contact Page */
@@ -862,26 +870,28 @@ width: 70%;
 /** Projects **/
 /*************************************/
 .websites{
-display: inherit;
+display: flex;
 flex-direction: inherit;
 margin: 0 auto;
-gap: 1rem;
+gap: 2.5rem;
+font-size: 2.5rem;
 }
 
 .applications{
-    display: inherit;
+    display: flex;
     flex-direction: inherit;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 .project {
     display: flex;
     align-content: center;
-    max-width: 84rem;
-    box-shadow: 0px 2px 10px -5px rgba(150, 150, 150, 0.75);
-    -webkit-box-shadow: 0px 2px 10px -5px rgba(150, 150, 150, 0.75);
-    -moz-box-shadow: 0px 2px 10px -5px rgba(150, 150, 150, 0.75);
+    max-width: 60rem;
     background: #130413bb;
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.99);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.99);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.99);
+
 }
 
 .pjtImg {
@@ -899,7 +909,7 @@ gap: 1rem;
 .pjtTxt {
     display: flex;
     flex-direction: column;
-    border-left: 0.3rem solid #02d7df;
+    border-left: 0.35rem solid #02d7df;
     width: 30%;
     display: flex;
     text-align: center;
@@ -923,12 +933,12 @@ gap: 1rem;
 
 .right {
     flex-direction: row-reverse;
-    max-width: 84rem;
-}
+   
+} 
 
 .right .pjtTxt {
     border-left: none;
-    border-right: 0.3rem solid #02d7df;
+    border-right: 0.35rem solid #02d7df;
 }
 /*************************************/
 /** Contact Page **/

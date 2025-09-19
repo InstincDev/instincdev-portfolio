@@ -179,6 +179,17 @@ padding: 1.5rem 2rem;
   background: #61a6ab;
 }
 
+#projects h3{
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 600;
+    justify-content: center;
+    background: #f6f6e999;
+    box-shadow: 9px 1px 0px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 9px 0px 9px 1px rgba(0, 0, 0, 0.75);
+}
+
 /*  Contact Page */
 #contact {
     display: flex;

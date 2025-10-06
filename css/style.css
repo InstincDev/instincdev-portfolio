@@ -169,17 +169,20 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 5rem;
+    padding: 1.5rem;
     background: #f6f6e999;
 }
 
 #projects h2 {
-padding: 1.5rem 2rem;
-  color: #f6f6e9;
-  font-size: 3rem;
-  background: #61a6ab;
+    
+    padding: 1.5rem 2rem;
+    color: #f6f6e9;
+    font-size: 3rem;
+    background: #61a6ab;
 }
 
 #projects h3{
+    margin: 1.5rem;
     display: flex;
     font-size: 2.5rem;
     font-weight: 600;

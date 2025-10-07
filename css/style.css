@@ -166,9 +166,10 @@ footer {
 
 /*  Projects Page */
 #projects {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 5rem;
+    margin: auto;
     padding: 1.5rem;
     background: #f6f6e999;
 }
@@ -181,7 +182,7 @@ footer {
     background: #61a6ab;
 }
 
-#projects h3{
+#projects h3.projectType{
     margin: 1.5rem;
     display: flex;
     font-size: 2.5rem;
@@ -192,6 +193,7 @@ footer {
     -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 9px 0px 9px 1px rgba(0, 0, 0, 0.75);
 }
+
 
 /*  Contact Page */
 #contact {

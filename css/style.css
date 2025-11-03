@@ -74,7 +74,8 @@ a:hover{
     color: #130413;
 }
 ul{
-    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .instincdev {
@@ -887,8 +888,115 @@ width: 70%;
 }
 
 .list{
+    padding: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
     background-color: #f6f6e9;
 }
+
+.list p{
+    font-family: "Roboto Slab";
+    font-size: 2rem;
+    color:#130413;
+}
+
+.plans,
+.packages{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.plan{
+    width:33.33%;
+    margin: 2rem 0.5rem;
+    border-radius: 0.50rem;
+    background-color: #61a6ab;
+}
+
+.plan h3{
+    margin: 0 2rem;
+    background-color:#130413cc;
+}
+
+.plan ul, .package ul{
+    font-size: 2rem;
+}
+
+.plan ul span{
+    font-size: 1.5rem;
+}
+
+/* Premium Add-Ons */
+
+.packages{
+    flex-direction: column;
+    margin: 2rem 0.5rem;
+    color:#f6f6e9;
+    
+    
+}
+
+.package{
+    margin: 1rem 2rem;border-radius: 0.50rem;background-color: #130413;
+}
+
+.package h3, .package>span{
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #02d7df;
+    background-color:#f6f6e999;
+}
+
+.package p{
+    color: #f6f6e9;
+}
+
+
+
+.pkg{
+    padding:1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pkgDescript{
+    width: 50%;
+    border-right: solid #02d7df 0.3px ;
+    
+}
+
+.pkgDescript p{
+    width: 75%;
+    margin: auto;
+    font-size: 1.7rem;
+    text-align:center;
+}
+
+.pkgDescript span{
+    width:100%;
+    font-size: 5rem;
+    color: #02d7df;
+}
+
+.pkgList{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pkgList ul{
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.5rem;
+    
+}
+
+
 
 /*************************************/
 /** Projects **/
